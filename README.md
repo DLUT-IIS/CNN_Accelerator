@@ -17,26 +17,9 @@ Related articles on SLFP:
 
 "FPGA-Friendly Architecture of Processing Elements For Efficient and Accurate CNNs"  
 
-
-
-## contents
-
-- [User Guide](#User Guide)
-  - [Pre-development Configuration Requirement](#Pre-development Configuration Requirement)
-  - [Installation steps](#Installation steps)
-- [Description of the document catalogue](#Description of the document catalogue)
-- [Developed Architecture](#Developed Architecture)
-- [Deployment](#Deployment)
-- [Frameworks used](#Frameworks used)
-- [Benefactor](#Benefactor)
-  - [How to participate in open source projects](#How to participate in open source projects)
-- [Version control](#Version control)
-- [Author](#Author)
-- [Acknowledgement](#Acknowledgement)
-
 ### User Guide
 
-Please replace ‘zhangshize1103/Universal-CNN-accelerator’ with ‘your_github_name/your_repository’ in all links. ’
+Please replace ’https://github.com/zhangshize1103/Universal_CNN_Accelerator' with ‘your_github_name/your_repository’ in all links. ’
 
 ###### Pre-development Configuration Requirement
 
@@ -51,7 +34,7 @@ Dependencies:
 2. Clone the repo
 
 ```sh
-git clone https://github.com/zhangshize1103/Universal-CNN-accelerator/tree/main/Software)
+git clone https://github.com/zhangshize1103/https://github.com/zhangshize1103/Universal_CNN_Accelerator)
 ```
 
 ### Description of the document catalogue
@@ -118,59 +101,7 @@ filetree
 
 ```
 
-
-### Developed Architecture 
-
-[ARCHITECTURE.md](https://github.com/zhangshize1103/Universal-CNN-accelerator/edit/main/Software/README.md)
-
-### Deployment
-
-
-
 ### Frameworks used
-
-- [xxxxxxx](https://getbootstrap.com)
-- [xxxxxxx](https://jquery.com)
-- [xxxxxxx](https://laravel.com)
-
-### Benefactor
-
-
-
-#### How to participate in open source projects
-
-
-
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-
-
-### Version control
-
-
-### Author
-
-
-### Copyright
-
-
-### Acknowledgement
-
-
-- [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-- [Img Shields](https://shields.io)
-- [Choose an Open Source License](https://choosealicense.com)
-- [GitHub Pages](https://pages.github.com)
-- [Animate.css](https://daneden.github.io/animate.css)
-- [xxxxxxxxxxxxxx](https://connoratherton.com/loaders)
-
-<!-- links -->
-
 
 
 
