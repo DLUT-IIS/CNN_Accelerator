@@ -31,10 +31,10 @@ Dependencies:
 ###### **Installation steps**
 
 1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+2. Clone 
 
 ```sh
-git clone https://github.com/zhangshize1103/https://github.com/zhangshize1103/Universal_CNN_Accelerator)
+git clone https://github.com/zhangshize1103/https://github.com/zhangshize1103/Universal_CNN_Accelerator
 ```
 
 ### Description of the document catalogue
@@ -100,8 +100,6 @@ filetree
 └── imgnet_train_eval.py
 
 ```
-
-### Frameworks used
 
 
 
