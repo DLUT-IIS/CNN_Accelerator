@@ -1,0 +1,1294 @@
+Script started on 2024-03-12 11:58:21+08:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="163" LINES="18"]
+]0;vscode@pytorch: /workspaces/pytorch-dev/SLFP_CNNs[01;32mvscode@pytorch[00m:[01;34m/workspaces/pytorch-dev/SLFP_CNNs[00m$ bash training_txt/[K[K[K[K[K[K[K[K[K[K[K[K[Kbash_train.sh 
+=> creating model mobilenet_m1 ...
+SSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:176: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-12 11:58:55.026588 epoch: 1 step: 0 cls_loss= 1.72881 (18886 samples/sec)
+2024-03-12 11:59:52.216887 epoch: 1 step: 500 cls_loss= 2.64223 (279 samples/sec)
+2024-03-12 12:00:49.191461 epoch: 1 step: 1000 cls_loss= 2.47943 (280 samples/sec)
+2024-03-12 12:01:46.251349 epoch: 1 step: 1500 cls_loss= 1.53534 (280 samples/sec)
+2024-03-12 12:02:42.543027 epoch: 1 step: 2000 cls_loss= 1.51529 (284 samples/sec)
+2024-03-12 12:03:38.453039 epoch: 1 step: 2500 cls_loss= 1.87467 (286 samples/sec)
+2024-03-12 12:04:35.297206 epoch: 1 step: 3000 cls_loss= 2.24141 (281 samples/sec)
+2024-03-12 12:07:32.411496------------------------------------------------------ Precision@1: 66.47%  Precision@1: 87.21%
+
+top1: [66.47]
+top5: [87.21000000000001]
+2024-03-12 12:07:32.617308 epoch: 2 step: 0 cls_loss= 1.79263 (78070 samples/sec)
+2024-03-12 12:08:29.571675 epoch: 2 step: 500 cls_loss= 1.93053 (281 samples/sec)
+2024-03-12 12:09:26.459816 epoch: 2 step: 1000 cls_loss= 2.15778 (281 samples/sec)
+2024-03-12 12:10:23.640480 epoch: 2 step: 1500 cls_loss= 2.16547 (279 samples/sec)
+2024-03-12 12:11:21.045321 epoch: 2 step: 2000 cls_loss= 1.85974 (278 samples/sec)
+2024-03-12 12:12:19.119337 epoch: 2 step: 2500 cls_loss= 1.36856 (275 samples/sec)
+2024-03-12 12:13:16.795251 epoch: 2 step: 3000 cls_loss= 2.10528 (277 samples/sec)
+2024-03-12 12:16:17.319638------------------------------------------------------ Precision@1: 66.95%  Precision@1: 87.48%
+
+top1: [66.47, 66.946]
+top5: [87.21000000000001, 87.476]
+2024-03-12 12:16:17.518915 epoch: 3 step: 0 cls_loss= 2.36931 (80633 samples/sec)
+2024-03-12 12:17:14.676488 epoch: 3 step: 500 cls_loss= 2.06962 (280 samples/sec)
+2024-03-12 12:18:11.676648 epoch: 3 step: 1000 cls_loss= 1.75077 (280 samples/sec)
+2024-03-12 12:19:08.518949 epoch: 3 step: 1500 cls_loss= 2.47030 (281 samples/sec)
+2024-03-12 12:20:06.277291 epoch: 3 step: 2000 cls_loss= 1.92284 (277 samples/sec)
+2024-03-12 12:21:03.067862 epoch: 3 step: 2500 cls_loss= 1.72205 (281 samples/sec)
+2024-03-12 12:21:59.827526 epoch: 3 step: 3000 cls_loss= 1.83797 (281 samples/sec)
+2024-03-12 12:25:00.826275------------------------------------------------------ Precision@1: 66.87%  Precision@1: 87.34%
+
+top1: [66.47, 66.946, 66.87]
+top5: [87.21000000000001, 87.476, 87.33800000000001]
+2024-03-12 12:25:01.033634 epoch: 4 step: 0 cls_loss= 1.30047 (77617 samples/sec)
+2024-03-12 12:25:58.047339 epoch: 4 step: 500 cls_loss= 1.66475 (280 samples/sec)
+2024-03-12 12:26:54.729491 epoch: 4 step: 1000 cls_loss= 1.76897 (282 samples/sec)
+2024-03-12 12:27:51.445325 epoch: 4 step: 1500 cls_loss= 2.04837 (282 samples/sec)
+2024-03-12 12:28:49.273844 epoch: 4 step: 2000 cls_loss= 2.01472 (276 samples/sec)
+2024-03-12 12:29:46.048026 epoch: 4 step: 2500 cls_loss= 1.93327 (281 samples/sec)
+2024-03-12 12:30:43.262061 epoch: 4 step: 3000 cls_loss= 2.14040 (279 samples/sec)
+2024-03-12 12:33:44.777844------------------------------------------------------ Precision@1: 66.72%  Precision@1: 87.28%
+
+top1: [66.47, 66.946, 66.87, 66.72]
+top5: [87.21000000000001, 87.476, 87.33800000000001, 87.28]
+2024-03-12 12:33:44.998406 epoch: 5 step: 0 cls_loss= 1.91986 (72978 samples/sec)
+2024-03-12 12:34:42.518782 epoch: 5 step: 500 cls_loss= 1.69874 (278 samples/sec)
+2024-03-12 12:35:40.894038 epoch: 5 step: 1000 cls_loss= 2.03276 (274 samples/sec)
+2024-03-12 12:36:39.789269 epoch: 5 step: 1500 cls_loss= 1.50525 (271 samples/sec)
+2024-03-12 12:37:37.746268 epoch: 5 step: 2000 cls_loss= 2.41591 (276 samples/sec)
+2024-03-12 12:38:35.908122 epoch: 5 step: 2500 cls_loss= 2.06585 (275 samples/sec)
+2024-03-12 12:39:34.619749 epoch: 5 step: 3000 cls_loss= 2.15703 (272 samples/sec)
+2024-03-12 12:42:35.934033------------------------------------------------------ Precision@1: 66.61%  Precision@1: 87.25%
+
+top1: [66.47, 66.946, 66.87, 66.72, 66.608]
+top5: [87.21000000000001, 87.476, 87.33800000000001, 87.28, 87.246]
+2024-03-12 12:42:36.139577 epoch: 6 step: 0 cls_loss= 2.67413 (78320 samples/sec)
+2024-03-12 12:43:34.073470 epoch: 6 step: 500 cls_loss= 2.00510 (276 samples/sec)
+2024-03-12 12:44:32.147607 epoch: 6 step: 1000 cls_loss= 1.83560 (275 samples/sec)
+2024-03-12 12:45:30.565624 epoch: 6 step: 1500 cls_loss= 2.88075 (273 samples/sec)
+2024-03-12 12:46:28.742293 epoch: 6 step: 2000 cls_loss= 1.90275 (275 samples/sec)
+2024-03-12 12:47:26.627375 epoch: 6 step: 2500 cls_loss= 1.44382 (276 samples/sec)
+2024-03-12 12:48:24.815415 epoch: 6 step: 3000 cls_loss= 1.90655 (275 samples/sec)
+2024-03-12 12:51:29.549320------------------------------------------------------ Precision@1: 66.34%  Precision@1: 87.00%
+
+top1: [66.47, 66.946, 66.87, 66.72, 66.608, 66.336]
+top5: [87.21000000000001, 87.476, 87.33800000000001, 87.28, 87.246, 86.998]
+2024-03-12 12:51:29.755346 epoch: 7 step: 0 cls_loss= 1.83295 (78075 samples/sec)
+2024-03-12 12:52:27.982834 epoch: 7 step: 500 cls_loss= 1.66334 (274 samples/sec)
+2024-03-12 12:53:27.119691 epoch: 7 step: 1000 cls_loss= 2.46658 (270 samples/sec)
+2024-03-12 12:54:26.399741 epoch: 7 step: 1500 cls_loss= 2.54851 (269 samples/sec)
+2024-03-12 12:55:25.117378 epoch: 7 step: 2000 cls_loss= 1.45273 (272 samples/sec)
+2024-03-12 12:56:24.728213 epoch: 7 step: 2500 cls_loss= 1.77812 (268 samples/sec)
+2024-03-12 12:57:23.710041 epoch: 7 step: 3000 cls_loss= 2.26933 (271 samples/sec)
+2024-03-12 13:00:27.479935------------------------------------------------------ Precision@1: 66.41%  Precision@1: 87.19%
+
+top1: [66.47, 66.946, 66.87, 66.72, 66.608, 66.336, 66.41]
+top5: [87.21000000000001, 87.476, 87.33800000000001, 87.28, 87.246, 86.998, 87.194]
+2024-03-12 13:00:27.678044 epoch: 8 step: 0 cls_loss= 2.30272 (81153 samples/sec)
+2024-03-12 13:01:25.072192 epoch: 8 step: 500 cls_loss= 1.68441 (278 samples/sec)
+2024-03-12 13:02:22.186337 epoch: 8 step: 1000 cls_loss= 2.42839 (280 samples/sec)
+2024-03-12 13:03:19.390231 epoch: 8 step: 1500 cls_loss= 1.87898 (279 samples/sec)
+2024-03-12 13:04:16.424843 epoch: 8 step: 2000 cls_loss= 1.65806 (280 samples/sec)
+2024-03-12 13:05:14.170457 epoch: 8 step: 2500 cls_loss= 2.04074 (277 samples/sec)
+2024-03-12 13:06:11.221643 epoch: 8 step: 3000 cls_loss= 1.58490 (280 samples/sec)
+2024-03-12 13:09:12.732088------------------------------------------------------ Precision@1: 65.93%  Precision@1: 86.79%
+
+top1: [66.47, 66.946, 66.87, 66.72, 66.608, 66.336, 66.41, 65.926]
+top5: [87.21000000000001, 87.476, 87.33800000000001, 87.28, 87.246, 86.998, 87.194, 86.788]
+2024-03-12 13:09:12.943897 epoch: 9 step: 0 cls_loss= 1.21460 (75968 samples/sec)
+2024-03-12 13:10:11.776333 epoch: 9 step: 500 cls_loss= 2.27120 (272 samples/sec)
+2024-03-12 13:11:09.351907 epoch: 9 step: 1000 cls_loss= 2.11791 (277 samples/sec)
+2024-03-12 13:12:07.507706 epoch: 9 step: 1500 cls_loss= 1.61184 (275 samples/sec)
+2024-03-12 13:13:05.826011 epoch: 9 step: 2000 cls_loss= 2.16780 (274 samples/sec)
+2024-03-12 13:14:03.264445 epoch: 9 step: 2500 cls_loss= 1.80886 (278 samples/sec)
+2024-03-12 13:15:01.825305 epoch: 9 step: 3000 cls_loss= 2.39560 (273 samples/sec)
+2024-03-12 13:18:03.984283------------------------------------------------------ Precision@1: 65.72%  Precision@1: 86.63%
+
+top1: [66.47, 66.946, 66.87, 66.72, 66.608, 66.336, 66.41, 65.926, 65.72]
+top5: [87.21000000000001, 87.476, 87.33800000000001, 87.28, 87.246, 86.998, 87.194, 86.788, 86.63]
+2024-03-12 13:18:04.182954 epoch: 10 step: 0 cls_loss= 2.09895 (80974 samples/sec)
+2024-03-12 13:19:02.686420 epoch: 10 step: 500 cls_loss= 2.21334 (273 samples/sec)
+2024-03-12 13:20:01.716863 epoch: 10 step: 1000 cls_loss= 2.42808 (271 samples/sec)
+2024-03-12 13:20:59.612196 epoch: 10 step: 1500 cls_loss= 2.15832 (276 samples/sec)
+2024-03-12 13:21:58.346902 epoch: 10 step: 2000 cls_loss= 1.51136 (272 samples/sec)
+2024-03-12 13:22:56.572515 epoch: 10 step: 2500 cls_loss= 1.91837 (274 samples/sec)
+2024-03-12 13:23:55.586282 epoch: 10 step: 3000 cls_loss= 2.10071 (271 samples/sec)
+2024-03-12 13:26:59.111148------------------------------------------------------ Precision@1: 66.24%  Precision@1: 87.08%
+
+top1: [66.47, 66.946, 66.87, 66.72, 66.608, 66.336, 66.41, 65.926, 65.72, 66.244]
+top5: [87.21000000000001, 87.476, 87.33800000000001, 87.28, 87.246, 86.998, 87.194, 86.788, 86.63, 87.08]
+=> creating model mobilenet_m1 ...
+CustomSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:118: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-12 13:27:01.427791 epoch: 1 step: 0 cls_loss= 2.73925 (18745 samples/sec)
+2024-03-12 13:27:59.606936 epoch: 1 step: 500 cls_loss= 1.01148 (275 samples/sec)
+2024-03-12 13:28:57.206577 epoch: 1 step: 1000 cls_loss= 1.72340 (277 samples/sec)
+2024-03-12 13:29:54.697145 epoch: 1 step: 1500 cls_loss= 1.98761 (278 samples/sec)
+2024-03-12 13:30:52.367728 epoch: 1 step: 2000 cls_loss= 1.28419 (277 samples/sec)
+2024-03-12 13:31:50.199212 epoch: 1 step: 2500 cls_loss= 1.93417 (276 samples/sec)
+2024-03-12 13:32:48.148142 epoch: 1 step: 3000 cls_loss= 1.90435 (276 samples/sec)
+2024-03-12 13:35:50.482202------------------------------------------------------ Precision@1: 67.12%  Precision@1: 87.63%
+
+top1: [67.116]
+top5: [87.628]
+2024-03-12 13:35:50.670899 epoch: 2 step: 0 cls_loss= 2.04677 (85291 samples/sec)
+2024-03-12 13:36:48.099333 epoch: 2 step: 500 cls_loss= 1.73831 (278 samples/sec)
+2024-03-12 13:37:45.745855 epoch: 2 step: 1000 cls_loss= 2.00946 (277 samples/sec)
+2024-03-12 13:38:43.360487 epoch: 2 step: 1500 cls_loss= 2.41188 (277 samples/sec)
+2024-03-12 13:39:40.628004 epoch: 2 step: 2000 cls_loss= 1.45660 (279 samples/sec)
+2024-03-12 13:40:38.166501 epoch: 2 step: 2500 cls_loss= 1.89959 (278 samples/sec)
+2024-03-12 13:41:35.551698 epoch: 2 step: 3000 cls_loss= 2.16560 (278 samples/sec)
+2024-03-12 13:44:37.649028------------------------------------------------------ Precision@1: 66.94%  Precision@1: 87.36%
+
+top1: [67.116, 66.94]
+top5: [87.628, 87.362]
+2024-03-12 13:44:37.848908 epoch: 3 step: 0 cls_loss= 2.01901 (80480 samples/sec)
+2024-03-12 13:45:36.064895 epoch: 3 step: 500 cls_loss= 2.56251 (274 samples/sec)
+2024-03-12 13:46:34.172262 epoch: 3 step: 1000 cls_loss= 1.60944 (275 samples/sec)
+2024-03-12 13:47:32.397243 epoch: 3 step: 1500 cls_loss= 2.67845 (274 samples/sec)
+2024-03-12 13:48:30.476056 epoch: 3 step: 2000 cls_loss= 1.88641 (275 samples/sec)
+2024-03-12 13:49:29.278874 epoch: 3 step: 2500 cls_loss= 1.67763 (272 samples/sec)
+2024-03-12 13:50:27.665308 epoch: 3 step: 3000 cls_loss= 1.59770 (274 samples/sec)
+2024-03-12 13:53:29.529588------------------------------------------------------ Precision@1: 66.78%  Precision@1: 87.28%
+
+top1: [67.116, 66.94, 66.784]
+top5: [87.628, 87.362, 87.282]
+2024-03-12 13:53:29.728852 epoch: 4 step: 0 cls_loss= 1.40368 (80656 samples/sec)
+2024-03-12 13:54:26.828703 epoch: 4 step: 500 cls_loss= 1.53549 (280 samples/sec)
+2024-03-12 13:55:23.785004 epoch: 4 step: 1000 cls_loss= 1.78004 (281 samples/sec)
+2024-03-12 13:56:20.417808 epoch: 4 step: 1500 cls_loss= 1.41784 (282 samples/sec)
+2024-03-12 13:57:17.016896 epoch: 4 step: 2000 cls_loss= 0.95229 (282 samples/sec)
+2024-03-12 13:58:13.506040 epoch: 4 step: 2500 cls_loss= 2.05145 (283 samples/sec)
+2024-03-12 13:59:09.858609 epoch: 4 step: 3000 cls_loss= 1.34134 (284 samples/sec)
+2024-03-12 14:02:09.288571------------------------------------------------------ Precision@1: 66.91%  Precision@1: 87.44%
+
+top1: [67.116, 66.94, 66.784, 66.906]
+top5: [87.628, 87.362, 87.282, 87.438]
+2024-03-12 14:02:09.498654 epoch: 5 step: 0 cls_loss= 2.13982 (76630 samples/sec)
+2024-03-12 14:03:06.914792 epoch: 5 step: 500 cls_loss= 1.43015 (278 samples/sec)
+2024-03-12 14:04:04.516911 epoch: 5 step: 1000 cls_loss= 1.41221 (277 samples/sec)
+2024-03-12 14:05:02.292243 epoch: 5 step: 1500 cls_loss= 1.99702 (277 samples/sec)
+2024-03-12 14:05:59.683848 epoch: 5 step: 2000 cls_loss= 1.91266 (278 samples/sec)
+2024-03-12 14:06:57.093179 epoch: 5 step: 2500 cls_loss= 1.75658 (278 samples/sec)
+2024-03-12 14:07:53.923174 epoch: 5 step: 3000 cls_loss= 1.33052 (281 samples/sec)
+2024-03-12 14:10:52.742888------------------------------------------------------ Precision@1: 66.91%  Precision@1: 87.42%
+
+top1: [67.116, 66.94, 66.784, 66.906, 66.914]
+top5: [87.628, 87.362, 87.282, 87.438, 87.422]
+2024-03-12 14:10:52.952246 epoch: 6 step: 0 cls_loss= 1.26191 (76793 samples/sec)
+2024-03-12 14:11:49.669541 epoch: 6 step: 500 cls_loss= 0.90775 (282 samples/sec)
+2024-03-12 14:12:47.455414 epoch: 6 step: 1000 cls_loss= 1.71040 (276 samples/sec)
+2024-03-12 14:13:44.509988 epoch: 6 step: 1500 cls_loss= 2.23861 (280 samples/sec)
+2024-03-12 14:14:42.201262 epoch: 6 step: 2000 cls_loss= 1.72682 (277 samples/sec)
+2024-03-12 14:15:40.077477 epoch: 6 step: 2500 cls_loss= 2.06344 (276 samples/sec)
+2024-03-12 14:16:38.048908 epoch: 6 step: 3000 cls_loss= 1.82563 (276 samples/sec)
+2024-03-12 14:19:42.421221------------------------------------------------------ Precision@1: 66.64%  Precision@1: 87.30%
+
+top1: [67.116, 66.94, 66.784, 66.906, 66.914, 66.636]
+top5: [87.628, 87.362, 87.282, 87.438, 87.422, 87.304]
+2024-03-12 14:19:42.631719 epoch: 7 step: 0 cls_loss= 1.11241 (76411 samples/sec)
+2024-03-12 14:20:39.340281 epoch: 7 step: 500 cls_loss= 2.20370 (282 samples/sec)
+2024-03-12 14:21:36.758555 epoch: 7 step: 1000 cls_loss= 2.04121 (278 samples/sec)
+2024-03-12 14:22:34.701620 epoch: 7 step: 1500 cls_loss= 1.63669 (276 samples/sec)
+2024-03-12 14:23:32.459632 epoch: 7 step: 2000 cls_loss= 2.47462 (277 samples/sec)
+2024-03-12 14:24:29.718336 epoch: 7 step: 2500 cls_loss= 1.08839 (279 samples/sec)
+2024-03-12 14:25:26.892584 epoch: 7 step: 3000 cls_loss= 2.08337 (279 samples/sec)
+2024-03-12 14:28:27.633467------------------------------------------------------ Precision@1: 66.65%  Precision@1: 87.59%
+
+top1: [67.116, 66.94, 66.784, 66.906, 66.914, 66.636, 66.648]
+top5: [87.628, 87.362, 87.282, 87.438, 87.422, 87.304, 87.586]
+2024-03-12 14:28:27.844519 epoch: 8 step: 0 cls_loss= 1.57610 (76205 samples/sec)
+2024-03-12 14:29:25.294065 epoch: 8 step: 500 cls_loss= 2.16385 (278 samples/sec)
+2024-03-12 14:30:21.804098 epoch: 8 step: 1000 cls_loss= 1.37373 (283 samples/sec)
+2024-03-12 14:31:19.165087 epoch: 8 step: 1500 cls_loss= 1.84710 (279 samples/sec)
+2024-03-12 14:32:17.353753 epoch: 8 step: 2000 cls_loss= 1.54050 (275 samples/sec)
+2024-03-12 14:33:15.010125 epoch: 8 step: 2500 cls_loss= 1.53082 (277 samples/sec)
+2024-03-12 14:34:12.106607 epoch: 8 step: 3000 cls_loss= 1.90555 (280 samples/sec)
+2024-03-12 14:37:13.514930------------------------------------------------------ Precision@1: 66.78%  Precision@1: 87.42%
+
+top1: [67.116, 66.94, 66.784, 66.906, 66.914, 66.636, 66.648, 66.778]
+top5: [87.628, 87.362, 87.282, 87.438, 87.422, 87.304, 87.586, 87.416]
+2024-03-12 14:37:13.705019 epoch: 9 step: 0 cls_loss= 1.81171 (84739 samples/sec)
+2024-03-12 14:38:10.284172 epoch: 9 step: 500 cls_loss= 1.26543 (282 samples/sec)
+2024-03-12 14:39:06.537852 epoch: 9 step: 1000 cls_loss= 1.77596 (284 samples/sec)
+2024-03-12 14:40:03.229700 epoch: 9 step: 1500 cls_loss= 1.69281 (282 samples/sec)
+2024-03-12 14:41:00.350175 epoch: 9 step: 2000 cls_loss= 1.60534 (280 samples/sec)
+2024-03-12 14:41:57.850899 epoch: 9 step: 2500 cls_loss= 1.57162 (278 samples/sec)
+2024-03-12 14:42:55.321597 epoch: 9 step: 3000 cls_loss= 1.61987 (278 samples/sec)
+2024-03-12 14:45:56.156538------------------------------------------------------ Precision@1: 66.72%  Precision@1: 87.30%
+
+top1: [67.116, 66.94, 66.784, 66.906, 66.914, 66.636, 66.648, 66.778, 66.71600000000001]
+top5: [87.628, 87.362, 87.282, 87.438, 87.422, 87.304, 87.586, 87.416, 87.296]
+2024-03-12 14:45:56.382251 epoch: 10 step: 0 cls_loss= 1.21219 (71269 samples/sec)
+2024-03-12 14:46:52.914099 epoch: 10 step: 500 cls_loss= 1.37373 (283 samples/sec)
+2024-03-12 14:47:50.241581 epoch: 10 step: 1000 cls_loss= 1.90595 (279 samples/sec)
+2024-03-12 14:48:47.719987 epoch: 10 step: 1500 cls_loss= 1.72443 (278 samples/sec)
+2024-03-12 14:49:44.070869 epoch: 10 step: 2000 cls_loss= 1.43445 (284 samples/sec)
+2024-03-12 14:50:40.951420 epoch: 10 step: 2500 cls_loss= 1.57781 (281 samples/sec)
+2024-03-12 14:51:38.158483 epoch: 10 step: 3000 cls_loss= 2.01033 (279 samples/sec)
+2024-03-12 14:54:39.105280------------------------------------------------------ Precision@1: 66.52%  Precision@1: 87.19%
+
+top1: [67.116, 66.94, 66.784, 66.906, 66.914, 66.636, 66.648, 66.778, 66.71600000000001, 66.516]
+top5: [87.628, 87.362, 87.282, 87.438, 87.422, 87.304, 87.586, 87.416, 87.296, 87.186]
+=> creating model mobilenet_m1 ...
+Adam
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+2024-03-12 14:54:41.460051 epoch: 1 step: 0 cls_loss= 1.87024 (19525 samples/sec)
+2024-03-12 14:55:38.774261 epoch: 1 step: 500 cls_loss= 1.88605 (279 samples/sec)
+2024-03-12 14:56:36.807672 epoch: 1 step: 1000 cls_loss= 1.89252 (275 samples/sec)
+2024-03-12 14:57:35.719548 epoch: 1 step: 1500 cls_loss= 1.88434 (271 samples/sec)
+2024-03-12 14:58:34.224190 epoch: 1 step: 2000 cls_loss= 2.73848 (273 samples/sec)
+2024-03-12 14:59:32.508834 epoch: 1 step: 2500 cls_loss= 1.23298 (274 samples/sec)
+2024-03-12 15:00:30.202758 epoch: 1 step: 3000 cls_loss= 1.72666 (277 samples/sec)
+2024-03-12 15:03:32.044497------------------------------------------------------ Precision@1: 61.69%  Precision@1: 84.44%
+
+top1: [61.688]
+top5: [84.438]
+2024-03-12 15:03:32.245831 epoch: 2 step: 0 cls_loss= 1.79901 (79878 samples/sec)
+2024-03-12 15:04:30.506712 epoch: 2 step: 500 cls_loss= 2.08004 (274 samples/sec)
+2024-03-12 15:05:28.592314 epoch: 2 step: 1000 cls_loss= 1.85881 (275 samples/sec)
+2024-03-12 15:06:26.546782 epoch: 2 step: 1500 cls_loss= 2.37103 (276 samples/sec)
+2024-03-12 15:07:24.200633 epoch: 2 step: 2000 cls_loss= 2.20642 (277 samples/sec)
+2024-03-12 15:08:22.841707 epoch: 2 step: 2500 cls_loss= 1.88950 (272 samples/sec)
+2024-03-12 15:09:20.888288 epoch: 2 step: 3000 cls_loss= 1.50565 (275 samples/sec)
+2024-03-12 15:12:25.180624------------------------------------------------------ Precision@1: 61.05%  Precision@1: 83.68%
+
+top1: [61.688, 61.046]
+top5: [84.438, 83.676]
+2024-03-12 15:12:25.373757 epoch: 3 step: 0 cls_loss= 1.77478 (83367 samples/sec)
+2024-03-12 15:13:20.988996 epoch: 3 step: 500 cls_loss= 2.06080 (287 samples/sec)
+2024-03-12 15:14:18.566297 epoch: 3 step: 1000 cls_loss= 2.52875 (277 samples/sec)
+2024-03-12 15:15:15.245362 epoch: 3 step: 1500 cls_loss= 2.18420 (282 samples/sec)
+2024-03-12 15:16:12.748655 epoch: 3 step: 2000 cls_loss= 1.49967 (278 samples/sec)
+2024-03-12 15:17:10.676299 epoch: 3 step: 2500 cls_loss= 3.31250 (276 samples/sec)
+2024-03-12 15:18:08.564098 epoch: 3 step: 3000 cls_loss= 2.07316 (276 samples/sec)
+2024-03-12 15:21:06.207840------------------------------------------------------ Precision@1: 60.85%  Precision@1: 83.87%
+
+top1: [61.688, 61.046, 60.854]
+top5: [84.438, 83.676, 83.868]
+2024-03-12 15:21:06.417287 epoch: 4 step: 0 cls_loss= 2.18169 (76821 samples/sec)
+2024-03-12 15:22:04.737370 epoch: 4 step: 500 cls_loss= 2.54586 (274 samples/sec)
+2024-03-12 15:23:02.802606 epoch: 4 step: 1000 cls_loss= 1.77597 (275 samples/sec)
+2024-03-12 15:23:59.947498 epoch: 4 step: 1500 cls_loss= 1.81617 (280 samples/sec)
+2024-03-12 15:24:57.454722 epoch: 4 step: 2000 cls_loss= 2.48350 (278 samples/sec)
+2024-03-12 15:25:55.472081 epoch: 4 step: 2500 cls_loss= 1.71817 (275 samples/sec)
+2024-03-12 15:26:53.098932 epoch: 4 step: 3000 cls_loss= 1.78387 (277 samples/sec)
+2024-03-12 15:29:57.911690------------------------------------------------------ Precision@1: 60.59%  Precision@1: 83.51%
+
+top1: [61.688, 61.046, 60.854, 60.594]
+top5: [84.438, 83.676, 83.868, 83.51]
+2024-03-12 15:29:58.122620 epoch: 5 step: 0 cls_loss= 1.64424 (76251 samples/sec)
+2024-03-12 15:30:55.533066 epoch: 5 step: 500 cls_loss= 1.19653 (278 samples/sec)
+2024-03-12 15:31:53.330283 epoch: 5 step: 1000 cls_loss= 2.17554 (276 samples/sec)
+2024-03-12 15:32:50.789212 epoch: 5 step: 1500 cls_loss= 1.88563 (278 samples/sec)
+2024-03-12 15:33:48.568448 epoch: 5 step: 2000 cls_loss= 1.80990 (276 samples/sec)
+2024-03-12 15:34:45.726559 epoch: 5 step: 2500 cls_loss= 1.51226 (280 samples/sec)
+2024-03-12 15:35:43.641764 epoch: 5 step: 3000 cls_loss= 2.27246 (276 samples/sec)
+2024-03-12 15:38:47.904088------------------------------------------------------ Precision@1: 60.79%  Precision@1: 83.65%
+
+top1: [61.688, 61.046, 60.854, 60.594, 60.79]
+top5: [84.438, 83.676, 83.868, 83.51, 83.654]
+2024-03-12 15:38:48.117957 epoch: 6 step: 0 cls_loss= 1.98551 (75218 samples/sec)
+2024-03-12 15:39:45.998343 epoch: 6 step: 500 cls_loss= 1.93440 (276 samples/sec)
+2024-03-12 15:40:44.362928 epoch: 6 step: 1000 cls_loss= 2.13381 (274 samples/sec)
+2024-03-12 15:41:42.409614 epoch: 6 step: 1500 cls_loss= 1.91842 (275 samples/sec)
+2024-03-12 15:42:40.773231 epoch: 6 step: 2000 cls_loss= 1.91542 (274 samples/sec)
+2024-03-12 15:43:39.345664 epoch: 6 step: 2500 cls_loss= 1.62791 (273 samples/sec)
+2024-03-12 15:44:37.458127 epoch: 6 step: 3000 cls_loss= 1.32969 (275 samples/sec)
+2024-03-12 15:47:40.230339------------------------------------------------------ Precision@1: 60.21%  Precision@1: 83.33%
+
+top1: [61.688, 61.046, 60.854, 60.594, 60.79, 60.206]
+top5: [84.438, 83.676, 83.868, 83.51, 83.654, 83.328]
+2024-03-12 15:47:40.436370 epoch: 7 step: 0 cls_loss= 1.65278 (78044 samples/sec)
+2024-03-12 15:48:38.393748 epoch: 7 step: 500 cls_loss= 2.03492 (276 samples/sec)
+2024-03-12 15:49:36.237773 epoch: 7 step: 1000 cls_loss= 1.76241 (276 samples/sec)
+2024-03-12 15:50:34.119606 epoch: 7 step: 1500 cls_loss= 1.96204 (276 samples/sec)
+2024-03-12 15:51:31.964236 epoch: 7 step: 2000 cls_loss= 1.55218 (276 samples/sec)
+2024-03-12 15:52:30.065859 epoch: 7 step: 2500 cls_loss= 2.27610 (275 samples/sec)
+2024-03-12 15:53:28.556936 epoch: 7 step: 3000 cls_loss= 1.99679 (273 samples/sec)
+2024-03-12 15:56:32.549688------------------------------------------------------ Precision@1: 59.84%  Precision@1: 82.94%
+
+top1: [61.688, 61.046, 60.854, 60.594, 60.79, 60.206, 59.836]
+top5: [84.438, 83.676, 83.868, 83.51, 83.654, 83.328, 82.94]
+2024-03-12 15:56:32.804282 epoch: 8 step: 0 cls_loss= 1.75093 (63096 samples/sec)
+2024-03-12 15:57:30.355428 epoch: 8 step: 500 cls_loss= 1.77828 (278 samples/sec)
+2024-03-12 15:58:27.625908 epoch: 8 step: 1000 cls_loss= 1.89316 (279 samples/sec)
+2024-03-12 15:59:25.388598 epoch: 8 step: 1500 cls_loss= 2.41448 (277 samples/sec)
+2024-03-12 16:00:24.009159 epoch: 8 step: 2000 cls_loss= 1.63515 (273 samples/sec)
+2024-03-12 16:01:21.781073 epoch: 8 step: 2500 cls_loss= 1.80200 (277 samples/sec)
+2024-03-12 16:02:20.201716 epoch: 8 step: 3000 cls_loss= 2.28922 (273 samples/sec)
+2024-03-12 16:05:21.780169------------------------------------------------------ Precision@1: 59.71%  Precision@1: 82.78%
+
+top1: [61.688, 61.046, 60.854, 60.594, 60.79, 60.206, 59.836, 59.712]
+top5: [84.438, 83.676, 83.868, 83.51, 83.654, 83.328, 82.94, 82.778]
+2024-03-12 16:05:22.004435 epoch: 9 step: 0 cls_loss= 1.38560 (71694 samples/sec)
+2024-03-12 16:06:19.757587 epoch: 9 step: 500 cls_loss= 1.92353 (277 samples/sec)
+2024-03-12 16:07:16.437504 epoch: 9 step: 1000 cls_loss= 1.61388 (282 samples/sec)
+2024-03-12 16:08:13.749643 epoch: 9 step: 1500 cls_loss= 1.28414 (279 samples/sec)
+2024-03-12 16:09:11.105783 epoch: 9 step: 2000 cls_loss= 1.83604 (279 samples/sec)
+2024-03-12 16:10:08.753122 epoch: 9 step: 2500 cls_loss= 1.93703 (277 samples/sec)
+2024-03-12 16:11:06.584956 epoch: 9 step: 3000 cls_loss= 1.86989 (276 samples/sec)
+2024-03-12 16:14:09.706209------------------------------------------------------ Precision@1: 59.87%  Precision@1: 82.80%
+
+top1: [61.688, 61.046, 60.854, 60.594, 60.79, 60.206, 59.836, 59.712, 59.868]
+top5: [84.438, 83.676, 83.868, 83.51, 83.654, 83.328, 82.94, 82.778, 82.8]
+2024-03-12 16:14:09.903472 epoch: 10 step: 0 cls_loss= 1.90614 (81606 samples/sec)
+2024-03-12 16:15:07.197035 epoch: 10 step: 500 cls_loss= 1.69427 (279 samples/sec)
+2024-03-12 16:16:03.854089 epoch: 10 step: 1000 cls_loss= 1.46135 (282 samples/sec)
+2024-03-12 16:17:01.195821 epoch: 10 step: 1500 cls_loss= 0.82506 (279 samples/sec)
+2024-03-12 16:17:58.857526 epoch: 10 step: 2000 cls_loss= 2.45379 (277 samples/sec)
+2024-03-12 16:18:54.978533 epoch: 10 step: 2500 cls_loss= 1.87227 (285 samples/sec)
+2024-03-12 16:19:51.732316 epoch: 10 step: 3000 cls_loss= 1.61427 (281 samples/sec)
+2024-03-12 16:22:51.798841------------------------------------------------------ Precision@1: 59.66%  Precision@1: 82.71%
+
+top1: [61.688, 61.046, 60.854, 60.594, 60.79, 60.206, 59.836, 59.712, 59.868, 59.664]
+top5: [84.438, 83.676, 83.868, 83.51, 83.654, 83.328, 82.94, 82.778, 82.8, 82.71000000000001]
+=> creating model SqueezeNet ...
+SSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:176: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-12 16:22:54.314969 epoch: 1 step: 0 cls_loss= 2.61049 (14526 samples/sec)
+2024-03-12 16:23:50.834829 epoch: 1 step: 500 cls_loss= 2.22199 (283 samples/sec)
+2024-03-12 16:24:47.984973 epoch: 1 step: 1000 cls_loss= 3.06191 (280 samples/sec)
+2024-03-12 16:25:44.631820 epoch: 1 step: 1500 cls_loss= 2.17889 (282 samples/sec)
+2024-03-12 16:26:40.928590 epoch: 1 step: 2000 cls_loss= 2.42340 (284 samples/sec)
+2024-03-12 16:27:37.699753 epoch: 1 step: 2500 cls_loss= 2.64777 (281 samples/sec)
+2024-03-12 16:28:34.282512 epoch: 1 step: 3000 cls_loss= 2.32900 (282 samples/sec)
+2024-03-12 16:31:33.318881------------------------------------------------------ Precision@1: 57.26%  Precision@1: 79.93%
+
+top1: [57.26]
+top5: [79.932]
+2024-03-12 16:31:33.501687 epoch: 2 step: 0 cls_loss= 2.47298 (87918 samples/sec)
+2024-03-12 16:32:30.060600 epoch: 2 step: 500 cls_loss= 2.96097 (282 samples/sec)
+2024-03-12 16:33:27.278692 epoch: 2 step: 1000 cls_loss= 2.61453 (279 samples/sec)
+2024-03-12 16:34:23.926476 epoch: 2 step: 1500 cls_loss= 2.69954 (282 samples/sec)
+2024-03-12 16:35:20.743728 epoch: 2 step: 2000 cls_loss= 2.43538 (281 samples/sec)
+2024-03-12 16:36:17.797554 epoch: 2 step: 2500 cls_loss= 3.07124 (280 samples/sec)
+2024-03-12 16:37:14.818453 epoch: 2 step: 3000 cls_loss= 2.81006 (280 samples/sec)
+2024-03-12 16:40:11.860355------------------------------------------------------ Precision@1: 57.37%  Precision@1: 79.86%
+
+top1: [57.26, 57.366]
+top5: [79.932, 79.85600000000001]
+2024-03-12 16:40:12.043162 epoch: 3 step: 0 cls_loss= 2.76707 (88068 samples/sec)
+2024-03-12 16:41:08.535601 epoch: 3 step: 500 cls_loss= 2.23771 (283 samples/sec)
+2024-03-12 16:42:03.994802 epoch: 3 step: 1000 cls_loss= 1.54074 (288 samples/sec)
+2024-03-12 16:43:00.716815 epoch: 3 step: 1500 cls_loss= 2.46051 (282 samples/sec)
+2024-03-12 16:43:57.245555 epoch: 3 step: 2000 cls_loss= 2.19809 (283 samples/sec)
+2024-03-12 16:44:53.355132 epoch: 3 step: 2500 cls_loss= 2.34822 (285 samples/sec)
+2024-03-12 16:45:51.270057 epoch: 3 step: 3000 cls_loss= 1.95119 (276 samples/sec)
+2024-03-12 16:48:50.759638------------------------------------------------------ Precision@1: 57.47%  Precision@1: 79.88%
+
+top1: [57.26, 57.366, 57.47]
+top5: [79.932, 79.85600000000001, 79.878]
+2024-03-12 16:48:50.937767 epoch: 4 step: 0 cls_loss= 2.25127 (90330 samples/sec)
+2024-03-12 16:49:47.997577 epoch: 4 step: 500 cls_loss= 2.40985 (280 samples/sec)
+2024-03-12 16:50:45.517145 epoch: 4 step: 1000 cls_loss= 2.67776 (278 samples/sec)
+2024-03-12 16:51:43.756570 epoch: 4 step: 1500 cls_loss= 1.67551 (274 samples/sec)
+2024-03-12 16:52:41.279696 epoch: 4 step: 2000 cls_loss= 3.28477 (278 samples/sec)
+2024-03-12 16:53:38.161294 epoch: 4 step: 2500 cls_loss= 2.88061 (281 samples/sec)
+2024-03-12 16:54:35.942796 epoch: 4 step: 3000 cls_loss= 2.32272 (276 samples/sec)
+2024-03-12 16:57:36.420812------------------------------------------------------ Precision@1: 57.43%  Precision@1: 79.98%
+
+top1: [57.26, 57.366, 57.47, 57.426]
+top5: [79.932, 79.85600000000001, 79.878, 79.982]
+2024-03-12 16:57:36.616374 epoch: 5 step: 0 cls_loss= 2.94313 (82363 samples/sec)
+2024-03-12 16:58:34.755512 epoch: 5 step: 500 cls_loss= 2.69588 (275 samples/sec)
+2024-03-12 16:59:33.142104 epoch: 5 step: 1000 cls_loss= 2.20698 (274 samples/sec)
+2024-03-12 17:00:31.338916 epoch: 5 step: 1500 cls_loss= 2.52470 (274 samples/sec)
+2024-03-12 17:01:29.571598 epoch: 5 step: 2000 cls_loss= 2.10012 (274 samples/sec)
+2024-03-12 17:02:27.609789 epoch: 5 step: 2500 cls_loss= 1.91184 (275 samples/sec)
+2024-03-12 17:03:26.364892 epoch: 5 step: 3000 cls_loss= 2.57621 (272 samples/sec)
+2024-03-12 17:06:27.950970------------------------------------------------------ Precision@1: 57.37%  Precision@1: 79.85%
+
+top1: [57.26, 57.366, 57.47, 57.426, 57.374]
+top5: [79.932, 79.85600000000001, 79.878, 79.982, 79.848]
+2024-03-12 17:06:28.137986 epoch: 6 step: 0 cls_loss= 1.93836 (86074 samples/sec)
+2024-03-12 17:07:26.093108 epoch: 6 step: 500 cls_loss= 2.28938 (276 samples/sec)
+2024-03-12 17:08:24.115673 epoch: 6 step: 1000 cls_loss= 2.88761 (275 samples/sec)
+2024-03-12 17:09:22.309716 epoch: 6 step: 1500 cls_loss= 2.26137 (274 samples/sec)
+2024-03-12 17:10:20.269970 epoch: 6 step: 2000 cls_loss= 3.09372 (276 samples/sec)
+2024-03-12 17:11:18.298464 epoch: 6 step: 2500 cls_loss= 1.89466 (275 samples/sec)
+2024-03-12 17:12:15.928973 epoch: 6 step: 3000 cls_loss= 2.60742 (277 samples/sec)
+2024-03-12 17:15:17.889423------------------------------------------------------ Precision@1: 57.38%  Precision@1: 79.90%
+
+top1: [57.26, 57.366, 57.47, 57.426, 57.374, 57.378]
+top5: [79.932, 79.85600000000001, 79.878, 79.982, 79.848, 79.904]
+2024-03-12 17:15:18.071180 epoch: 7 step: 0 cls_loss= 2.35323 (88567 samples/sec)
+2024-03-12 17:16:15.856952 epoch: 7 step: 500 cls_loss= 2.56233 (276 samples/sec)
+2024-03-12 17:17:12.860469 epoch: 7 step: 1000 cls_loss= 3.03845 (280 samples/sec)
+2024-03-12 17:18:09.424554 epoch: 7 step: 1500 cls_loss= 2.67063 (282 samples/sec)
+2024-03-12 17:19:06.327556 epoch: 7 step: 2000 cls_loss= 2.18263 (281 samples/sec)
+2024-03-12 17:20:04.107409 epoch: 7 step: 2500 cls_loss= 2.37822 (276 samples/sec)
+2024-03-12 17:21:02.301533 epoch: 7 step: 3000 cls_loss= 2.29937 (274 samples/sec)
+2024-03-12 17:24:05.326949------------------------------------------------------ Precision@1: 57.41%  Precision@1: 79.92%
+
+top1: [57.26, 57.366, 57.47, 57.426, 57.374, 57.378, 57.408]
+top5: [79.932, 79.85600000000001, 79.878, 79.982, 79.848, 79.904, 79.92]
+2024-03-12 17:24:05.521032 epoch: 8 step: 0 cls_loss= 2.30921 (82906 samples/sec)
+2024-03-12 17:25:04.023002 epoch: 8 step: 500 cls_loss= 1.95961 (273 samples/sec)
+2024-03-12 17:26:02.286278 epoch: 8 step: 1000 cls_loss= 2.83827 (274 samples/sec)
+2024-03-12 17:27:00.105442 epoch: 8 step: 1500 cls_loss= 3.16028 (276 samples/sec)
+2024-03-12 17:27:58.281430 epoch: 8 step: 2000 cls_loss= 2.56905 (275 samples/sec)
+2024-03-12 17:28:55.793453 epoch: 8 step: 2500 cls_loss= 2.70022 (278 samples/sec)
+2024-03-12 17:29:54.165224 epoch: 8 step: 3000 cls_loss= 3.45480 (274 samples/sec)
+2024-03-12 17:32:55.579420------------------------------------------------------ Precision@1: 57.30%  Precision@1: 79.93%
+
+top1: [57.26, 57.366, 57.47, 57.426, 57.374, 57.378, 57.408, 57.296]
+top5: [79.932, 79.85600000000001, 79.878, 79.982, 79.848, 79.904, 79.92, 79.934]
+2024-03-12 17:32:55.767575 epoch: 9 step: 0 cls_loss= 2.56720 (85538 samples/sec)
+2024-03-12 17:33:53.869374 epoch: 9 step: 500 cls_loss= 2.98334 (275 samples/sec)
+2024-03-12 17:34:51.218404 epoch: 9 step: 1000 cls_loss= 2.67187 (279 samples/sec)
+2024-03-12 17:35:48.204968 epoch: 9 step: 1500 cls_loss= 2.84818 (280 samples/sec)
+2024-03-12 17:36:45.077319 epoch: 9 step: 2000 cls_loss= 2.53999 (281 samples/sec)
+2024-03-12 17:37:42.571347 epoch: 9 step: 2500 cls_loss= 2.48461 (278 samples/sec)
+2024-03-12 17:38:39.686013 epoch: 9 step: 3000 cls_loss= 2.23440 (280 samples/sec)
+2024-03-12 17:41:43.045403------------------------------------------------------ Precision@1: 57.35%  Precision@1: 79.90%
+
+top1: [57.26, 57.366, 57.47, 57.426, 57.374, 57.378, 57.408, 57.296, 57.348]
+top5: [79.932, 79.85600000000001, 79.878, 79.982, 79.848, 79.904, 79.92, 79.934, 79.902]
+2024-03-12 17:41:43.236678 epoch: 10 step: 0 cls_loss= 2.16684 (84149 samples/sec)
+2024-03-12 17:42:41.346790 epoch: 10 step: 500 cls_loss= 3.07896 (275 samples/sec)
+2024-03-12 17:43:39.410330 epoch: 10 step: 1000 cls_loss= 2.48166 (275 samples/sec)
+2024-03-12 17:44:36.504842 epoch: 10 step: 1500 cls_loss= 2.32752 (280 samples/sec)
+2024-03-12 17:45:33.817401 epoch: 10 step: 2000 cls_loss= 2.31759 (279 samples/sec)
+2024-03-12 17:46:31.030563 epoch: 10 step: 2500 cls_loss= 1.91335 (279 samples/sec)
+2024-03-12 17:47:28.433175 epoch: 10 step: 3000 cls_loss= 2.21566 (278 samples/sec)
+2024-03-12 17:50:30.746637------------------------------------------------------ Precision@1: 57.37%  Precision@1: 79.90%
+
+top1: [57.26, 57.366, 57.47, 57.426, 57.374, 57.378, 57.408, 57.296, 57.348, 57.370000000000005]
+top5: [79.932, 79.85600000000001, 79.878, 79.982, 79.848, 79.904, 79.92, 79.934, 79.902, 79.902]
+=> creating model ResNet-50 ...
+SSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:176: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-12 17:50:34.239606 epoch: 1 step: 0 cls_loss= 1.36041 (9820 samples/sec)
+2024-03-12 17:51:56.693545 epoch: 1 step: 500 cls_loss= 1.14029 (194 samples/sec)
+2024-03-12 17:53:19.444474 epoch: 1 step: 1000 cls_loss= 0.96372 (193 samples/sec)
+2024-03-12 17:54:42.211507 epoch: 1 step: 1500 cls_loss= 1.09527 (193 samples/sec)
+2024-03-12 17:56:05.033928 epoch: 1 step: 2000 cls_loss= 0.50018 (193 samples/sec)
+2024-03-12 17:57:27.836237 epoch: 1 step: 2500 cls_loss= 1.27221 (193 samples/sec)
+2024-03-12 17:58:50.607093 epoch: 1 step: 3000 cls_loss= 0.99419 (193 samples/sec)
+2024-03-12 18:02:21.088995------------------------------------------------------ Precision@1: 75.63%  Precision@1: 92.59%
+
+top1: [75.63]
+top5: [92.592]
+2024-03-12 18:02:21.391763 epoch: 2 step: 0 cls_loss= 1.71120 (53094 samples/sec)
+2024-03-12 18:03:44.106278 epoch: 2 step: 500 cls_loss= 0.94139 (193 samples/sec)
+2024-03-12 18:05:06.848978 epoch: 2 step: 1000 cls_loss= 1.39785 (193 samples/sec)
+2024-03-12 18:06:29.642577 epoch: 2 step: 1500 cls_loss= 0.67177 (193 samples/sec)
+2024-03-12 18:07:52.433326 epoch: 2 step: 2000 cls_loss= 1.08830 (193 samples/sec)
+2024-03-12 18:09:15.217155 epoch: 2 step: 2500 cls_loss= 0.98243 (193 samples/sec)
+2024-03-12 18:10:38.001092 epoch: 2 step: 3000 cls_loss= 0.96956 (193 samples/sec)
+2024-03-12 18:14:08.801295------------------------------------------------------ Precision@1: 75.57%  Precision@1: 92.64%
+
+top1: [75.63, 75.568]
+top5: [92.592, 92.636]
+2024-03-12 18:14:09.115629 epoch: 3 step: 0 cls_loss= 1.57291 (51130 samples/sec)
+2024-03-12 18:15:31.753925 epoch: 3 step: 500 cls_loss= 1.51817 (193 samples/sec)
+2024-03-12 18:16:54.513085 epoch: 3 step: 1000 cls_loss= 0.97017 (193 samples/sec)
+2024-03-12 18:18:17.012746 epoch: 3 step: 1500 cls_loss= 1.29441 (193 samples/sec)
+2024-03-12 18:19:39.797522 epoch: 3 step: 2000 cls_loss= 1.44164 (193 samples/sec)
+2024-03-12 18:21:02.658808 epoch: 3 step: 2500 cls_loss= 1.03303 (193 samples/sec)
+2024-03-12 18:22:25.431690 epoch: 3 step: 3000 cls_loss= 0.71816 (193 samples/sec)
+2024-03-12 18:25:55.507185------------------------------------------------------ Precision@1: 75.70%  Precision@1: 92.66%
+
+top1: [75.63, 75.568, 75.702]
+top5: [92.592, 92.636, 92.662]
+2024-03-12 18:25:55.811312 epoch: 4 step: 0 cls_loss= 1.65818 (52823 samples/sec)
+2024-03-12 18:27:18.449639 epoch: 4 step: 500 cls_loss= 1.04608 (193 samples/sec)
+2024-03-12 18:28:41.219224 epoch: 4 step: 1000 cls_loss= 1.30371 (193 samples/sec)
+2024-03-12 18:30:04.497784 epoch: 4 step: 1500 cls_loss= 1.25629 (192 samples/sec)
+2024-03-12 18:31:27.813448 epoch: 4 step: 2000 cls_loss= 0.80553 (192 samples/sec)
+2024-03-12 18:32:51.078367 epoch: 4 step: 2500 cls_loss= 1.03406 (192 samples/sec)
+2024-03-12 18:34:14.122851 epoch: 4 step: 3000 cls_loss= 1.09055 (192 samples/sec)
+2024-03-12 18:37:45.062725------------------------------------------------------ Precision@1: 75.72%  Precision@1: 92.73%
+
+top1: [75.63, 75.568, 75.702, 75.72]
+top5: [92.592, 92.636, 92.662, 92.73400000000001]
+2024-03-12 18:37:45.365866 epoch: 5 step: 0 cls_loss= 1.30271 (53020 samples/sec)
+2024-03-12 18:39:07.963861 epoch: 5 step: 500 cls_loss= 2.05196 (193 samples/sec)
+2024-03-12 18:40:30.901519 epoch: 5 step: 1000 cls_loss= 0.49770 (192 samples/sec)
+2024-03-12 18:41:53.651060 epoch: 5 step: 1500 cls_loss= 0.76852 (193 samples/sec)
+2024-03-12 18:43:16.250299 epoch: 5 step: 2000 cls_loss= 0.72500 (193 samples/sec)
+2024-03-12 18:44:38.864641 epoch: 5 step: 2500 cls_loss= 0.87725 (193 samples/sec)
+2024-03-12 18:46:01.458830 epoch: 5 step: 3000 cls_loss= 0.97512 (193 samples/sec)
+2024-03-12 18:49:31.614526------------------------------------------------------ Precision@1: 75.80%  Precision@1: 92.73%
+
+top1: [75.63, 75.568, 75.702, 75.72, 75.796]
+top5: [92.592, 92.636, 92.662, 92.73400000000001, 92.732]
+2024-03-12 18:49:31.966941 epoch: 6 step: 0 cls_loss= 1.20369 (45545 samples/sec)
+2024-03-12 18:50:54.658881 epoch: 6 step: 500 cls_loss= 1.22344 (193 samples/sec)
+2024-03-12 18:52:17.419613 epoch: 6 step: 1000 cls_loss= 1.46362 (193 samples/sec)
+2024-03-12 18:53:40.309143 epoch: 6 step: 1500 cls_loss= 1.01597 (193 samples/sec)
+2024-03-12 18:55:02.805048 epoch: 6 step: 2000 cls_loss= 1.02120 (193 samples/sec)
+2024-03-12 18:56:25.418855 epoch: 6 step: 2500 cls_loss= 1.45285 (193 samples/sec)
+2024-03-12 18:57:48.304346 epoch: 6 step: 3000 cls_loss= 1.31088 (193 samples/sec)
+2024-03-12 19:01:18.152069------------------------------------------------------ Precision@1: 75.68%  Precision@1: 92.68%
+
+top1: [75.63, 75.568, 75.702, 75.72, 75.796, 75.682]
+top5: [92.592, 92.636, 92.662, 92.73400000000001, 92.732, 92.682]
+2024-03-12 19:01:18.454981 epoch: 7 step: 0 cls_loss= 0.88577 (53074 samples/sec)
+2024-03-12 19:02:41.350251 epoch: 7 step: 500 cls_loss= 1.21725 (193 samples/sec)
+2024-03-12 19:04:04.323676 epoch: 7 step: 1000 cls_loss= 0.77318 (192 samples/sec)
+2024-03-12 19:05:27.157079 epoch: 7 step: 1500 cls_loss= 0.95453 (193 samples/sec)
+2024-03-12 19:06:50.041006 epoch: 7 step: 2000 cls_loss= 0.80895 (193 samples/sec)
+2024-03-12 19:08:13.076330 epoch: 7 step: 2500 cls_loss= 1.43509 (192 samples/sec)
+2024-03-12 19:09:35.986669 epoch: 7 step: 3000 cls_loss= 0.92134 (193 samples/sec)
+2024-03-12 19:13:05.765245------------------------------------------------------ Precision@1: 75.79%  Precision@1: 92.75%
+
+top1: [75.63, 75.568, 75.702, 75.72, 75.796, 75.682, 75.794]
+top5: [92.592, 92.636, 92.662, 92.73400000000001, 92.732, 92.682, 92.75]
+2024-03-12 19:13:06.079097 epoch: 8 step: 0 cls_loss= 1.19075 (51220 samples/sec)
+2024-03-12 19:14:28.802757 epoch: 8 step: 500 cls_loss= 1.24684 (193 samples/sec)
+2024-03-12 19:15:51.542991 epoch: 8 step: 1000 cls_loss= 1.13553 (193 samples/sec)
+2024-03-12 19:17:14.433636 epoch: 8 step: 1500 cls_loss= 0.98191 (193 samples/sec)
+2024-03-12 19:18:36.978322 epoch: 8 step: 2000 cls_loss= 1.39316 (193 samples/sec)
+2024-03-12 19:19:59.896480 epoch: 8 step: 2500 cls_loss= 1.16521 (192 samples/sec)
+2024-03-12 19:21:22.719343 epoch: 8 step: 3000 cls_loss= 1.36935 (193 samples/sec)
+2024-03-12 19:24:53.472853------------------------------------------------------ Precision@1: 75.88%  Precision@1: 92.76%
+
+top1: [75.63, 75.568, 75.702, 75.72, 75.796, 75.682, 75.794, 75.884]
+top5: [92.592, 92.636, 92.662, 92.73400000000001, 92.732, 92.682, 92.75, 92.764]
+2024-03-12 19:24:53.788771 epoch: 9 step: 0 cls_loss= 1.08219 (50906 samples/sec)
+2024-03-12 19:26:16.549418 epoch: 9 step: 500 cls_loss= 0.71202 (193 samples/sec)
+2024-03-12 19:27:39.175326 epoch: 9 step: 1000 cls_loss= 1.26507 (193 samples/sec)
+2024-03-12 19:29:01.930848 epoch: 9 step: 1500 cls_loss= 1.26835 (193 samples/sec)
+2024-03-12 19:30:24.898368 epoch: 9 step: 2000 cls_loss= 0.90949 (192 samples/sec)
+2024-03-12 19:31:47.864750 epoch: 9 step: 2500 cls_loss= 0.73837 (192 samples/sec)
+2024-03-12 19:33:10.812987 epoch: 9 step: 3000 cls_loss= 1.34661 (192 samples/sec)
+2024-03-12 19:36:42.050148------------------------------------------------------ Precision@1: 75.89%  Precision@1: 92.80%
+
+top1: [75.63, 75.568, 75.702, 75.72, 75.796, 75.682, 75.794, 75.884, 75.89]
+top5: [92.592, 92.636, 92.662, 92.73400000000001, 92.732, 92.682, 92.75, 92.764, 92.804]
+2024-03-12 19:36:42.396537 epoch: 10 step: 0 cls_loss= 1.90518 (46379 samples/sec)
+2024-03-12 19:38:05.280066 epoch: 10 step: 500 cls_loss= 1.41725 (193 samples/sec)
+2024-03-12 19:39:28.304365 epoch: 10 step: 1000 cls_loss= 1.53309 (192 samples/sec)
+2024-03-12 19:40:51.419037 epoch: 10 step: 1500 cls_loss= 1.31475 (192 samples/sec)
+2024-03-12 19:42:14.558437 epoch: 10 step: 2000 cls_loss= 1.17711 (192 samples/sec)
+2024-03-12 19:43:37.478107 epoch: 10 step: 2500 cls_loss= 0.61709 (192 samples/sec)
+2024-03-12 19:45:00.275926 epoch: 10 step: 3000 cls_loss= 1.35430 (193 samples/sec)
+2024-03-12 19:48:31.136278------------------------------------------------------ Precision@1: 75.80%  Precision@1: 92.72%
+
+top1: [75.63, 75.568, 75.702, 75.72, 75.796, 75.682, 75.794, 75.884, 75.89, 75.798]
+top5: [92.592, 92.636, 92.662, 92.73400000000001, 92.732, 92.682, 92.75, 92.764, 92.804, 92.72200000000001]
+]0;vscode@pytorch: /workspaces/pytorch-dev/SLFP_CNNs[01;32mvscode@pytorch[00m:[01;34m/workspaces/pytorch-dev/SLFP_CNNs[00m$ bash bash_train.sh 
+=> creating model mobilenet_m1 ...
+SSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:176: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-12 22:33:52.388982 epoch: 1 step: 0 cls_loss= 1.96371 (19849 samples/sec)
+2024-03-12 22:34:49.218385 epoch: 1 step: 500 cls_loss= 1.94650 (281 samples/sec)
+2024-03-12 22:35:46.775058 epoch: 1 step: 1000 cls_loss= 1.91777 (278 samples/sec)
+2024-03-12 22:36:43.808226 epoch: 1 step: 1500 cls_loss= 1.95026 (280 samples/sec)
+2024-03-12 22:37:41.861164 epoch: 1 step: 2000 cls_loss= 2.13638 (275 samples/sec)
+2024-03-12 22:38:39.023503 epoch: 1 step: 2500 cls_loss= 2.34026 (279 samples/sec)
+2024-03-12 22:39:35.472018 epoch: 1 step: 3000 cls_loss= 1.62780 (283 samples/sec)
+2024-03-12 22:42:34.506470------------------------------------------------------ Precision@1: 66.76%  Precision@1: 87.23%
+
+top1: [66.758]
+top5: [87.232]
+2024-03-12 22:42:34.699321 epoch: 2 step: 0 cls_loss= 1.79294 (83446 samples/sec)
+2024-03-12 22:43:32.365073 epoch: 2 step: 500 cls_loss= 1.67176 (277 samples/sec)
+2024-03-12 22:44:29.567291 epoch: 2 step: 1000 cls_loss= 2.01535 (279 samples/sec)
+2024-03-12 22:45:26.866975 epoch: 2 step: 1500 cls_loss= 1.71209 (279 samples/sec)
+2024-03-12 22:46:23.962774 epoch: 2 step: 2000 cls_loss= 2.37240 (280 samples/sec)
+2024-03-12 22:47:20.902011 epoch: 2 step: 2500 cls_loss= 1.81322 (281 samples/sec)
+2024-03-12 22:48:18.318635 epoch: 2 step: 3000 cls_loss= 1.79058 (278 samples/sec)
+2024-03-12 22:51:17.813988------------------------------------------------------ Precision@1: 67.12%  Precision@1: 87.45%
+
+top1: [66.758, 67.116]
+top5: [87.232, 87.45]
+2024-03-12 22:51:18.024152 epoch: 3 step: 0 cls_loss= 1.70196 (76527 samples/sec)
+2024-03-12 22:52:15.558796 epoch: 3 step: 500 cls_loss= 2.25120 (278 samples/sec)
+2024-03-12 22:53:13.312113 epoch: 3 step: 1000 cls_loss= 1.63485 (277 samples/sec)
+2024-03-12 22:54:10.438932 epoch: 3 step: 1500 cls_loss= 1.80763 (280 samples/sec)
+2024-03-12 22:55:07.300248 epoch: 3 step: 2000 cls_loss= 1.24407 (281 samples/sec)
+2024-03-12 22:56:05.116556 epoch: 3 step: 2500 cls_loss= 2.06569 (276 samples/sec)
+2024-03-12 22:57:02.928504 epoch: 3 step: 3000 cls_loss= 1.38467 (276 samples/sec)
+2024-03-12 23:00:03.531879------------------------------------------------------ Precision@1: 66.07%  Precision@1: 86.95%
+
+top1: [66.758, 67.116, 66.074]
+top5: [87.232, 87.45, 86.946]
+2024-03-12 23:00:03.734842 epoch: 4 step: 0 cls_loss= 1.73360 (79284 samples/sec)
+2024-03-12 23:01:01.936863 epoch: 4 step: 500 cls_loss= 2.24135 (274 samples/sec)
+2024-03-12 23:01:59.772516 epoch: 4 step: 1000 cls_loss= 2.02868 (276 samples/sec)
+2024-03-12 23:02:58.033761 epoch: 4 step: 1500 cls_loss= 2.54617 (274 samples/sec)
+2024-03-12 23:03:56.061650 epoch: 4 step: 2000 cls_loss= 2.60050 (275 samples/sec)
+2024-03-12 23:04:54.486664 epoch: 4 step: 2500 cls_loss= 2.61009 (273 samples/sec)
+2024-03-12 23:05:52.497355 epoch: 4 step: 3000 cls_loss= 1.92144 (275 samples/sec)
+2024-03-12 23:08:52.986876------------------------------------------------------ Precision@1: 65.73%  Precision@1: 86.53%
+
+top1: [66.758, 67.116, 66.074, 65.732]
+top5: [87.232, 87.45, 86.946, 86.532]
+2024-03-12 23:08:53.190980 epoch: 5 step: 0 cls_loss= 2.20660 (78840 samples/sec)
+2024-03-12 23:09:51.860400 epoch: 5 step: 500 cls_loss= 2.24690 (272 samples/sec)
+2024-03-12 23:10:49.641509 epoch: 5 step: 1000 cls_loss= 1.68557 (276 samples/sec)
+2024-03-12 23:11:47.555408 epoch: 5 step: 1500 cls_loss= 2.63742 (276 samples/sec)
+2024-03-12 23:12:45.626032 epoch: 5 step: 2000 cls_loss= 2.09366 (275 samples/sec)
+2024-03-12 23:13:43.419976 epoch: 5 step: 2500 cls_loss= 1.75587 (276 samples/sec)
+2024-03-12 23:14:41.478963 epoch: 5 step: 3000 cls_loss= 2.56131 (275 samples/sec)
+2024-03-12 23:17:42.812348------------------------------------------------------ Precision@1: 53.05%  Precision@1: 77.42%
+
+top1: [66.758, 67.116, 66.074, 65.732, 53.048]
+top5: [87.232, 87.45, 86.946, 86.532, 77.424]
+2024-03-12 23:17:43.014929 epoch: 6 step: 0 cls_loss= 2.93886 (79473 samples/sec)
+2024-03-12 23:18:40.663149 epoch: 6 step: 500 cls_loss= 2.05422 (277 samples/sec)
+2024-03-12 23:19:38.463727 epoch: 6 step: 1000 cls_loss= 2.57596 (276 samples/sec)
+2024-03-12 23:20:35.904537 epoch: 6 step: 1500 cls_loss= 2.55451 (278 samples/sec)
+2024-03-12 23:21:34.119325 epoch: 6 step: 2000 cls_loss= 2.21325 (274 samples/sec)
+2024-03-12 23:22:32.173103 epoch: 6 step: 2500 cls_loss= 1.99866 (275 samples/sec)
+2024-03-12 23:23:30.854955 epoch: 6 step: 3000 cls_loss= 2.30831 (272 samples/sec)
+2024-03-12 23:26:31.216688------------------------------------------------------ Precision@1: 62.92%  Precision@1: 84.75%
+
+top1: [66.758, 67.116, 66.074, 65.732, 53.048, 62.92]
+top5: [87.232, 87.45, 86.946, 86.532, 77.424, 84.746]
+2024-03-12 23:26:31.420318 epoch: 7 step: 0 cls_loss= 1.79338 (78979 samples/sec)
+2024-03-12 23:27:28.541379 epoch: 7 step: 500 cls_loss= 1.75824 (280 samples/sec)
+2024-03-12 23:28:25.583137 epoch: 7 step: 1000 cls_loss= 2.88020 (280 samples/sec)
+2024-03-12 23:29:23.297275 epoch: 7 step: 1500 cls_loss= 2.46459 (277 samples/sec)
+2024-03-12 23:30:21.119722 epoch: 7 step: 2000 cls_loss= 1.77601 (276 samples/sec)
+2024-03-12 23:31:18.768406 epoch: 7 step: 2500 cls_loss= 2.26238 (277 samples/sec)
+2024-03-12 23:32:16.310661 epoch: 7 step: 3000 cls_loss= 2.13232 (278 samples/sec)
+2024-03-12 23:35:19.907621------------------------------------------------------ Precision@1: 61.87%  Precision@1: 84.08%
+
+top1: [66.758, 67.116, 66.074, 65.732, 53.048, 62.92, 61.872]
+top5: [87.232, 87.45, 86.946, 86.532, 77.424, 84.746, 84.07600000000001]
+2024-03-12 23:35:20.106543 epoch: 8 step: 0 cls_loss= 2.39407 (80901 samples/sec)
+2024-03-12 23:36:17.584292 epoch: 8 step: 500 cls_loss= 2.15360 (278 samples/sec)
+2024-03-12 23:37:14.368622 epoch: 8 step: 1000 cls_loss= 2.55030 (281 samples/sec)
+2024-03-12 23:38:11.733185 epoch: 8 step: 1500 cls_loss= 2.04889 (278 samples/sec)
+2024-03-12 23:39:08.828097 epoch: 8 step: 2000 cls_loss= 2.18801 (280 samples/sec)
+2024-03-12 23:40:05.655717 epoch: 8 step: 2500 cls_loss= 2.84041 (281 samples/sec)
+2024-03-12 23:41:03.714476 epoch: 8 step: 3000 cls_loss= 2.76707 (275 samples/sec)
+2024-03-12 23:44:06.846290------------------------------------------------------ Precision@1: 53.02%  Precision@1: 77.29%
+
+top1: [66.758, 67.116, 66.074, 65.732, 53.048, 62.92, 61.872, 53.016]
+top5: [87.232, 87.45, 86.946, 86.532, 77.424, 84.746, 84.07600000000001, 77.29]
+2024-03-12 23:44:07.048034 epoch: 9 step: 0 cls_loss= 2.63503 (79776 samples/sec)
+2024-03-12 23:45:04.621014 epoch: 9 step: 500 cls_loss= 2.57575 (277 samples/sec)
+2024-03-12 23:46:01.676832 epoch: 9 step: 1000 cls_loss= 2.94795 (280 samples/sec)
+2024-03-12 23:46:59.386822 epoch: 9 step: 1500 cls_loss= 3.20576 (277 samples/sec)
+2024-03-12 23:47:57.300697 epoch: 9 step: 2000 cls_loss= 2.25376 (276 samples/sec)
+2024-03-12 23:48:55.353158 epoch: 9 step: 2500 cls_loss= 3.10831 (275 samples/sec)
+2024-03-12 23:49:53.035211 epoch: 9 step: 3000 cls_loss= 2.92348 (277 samples/sec)
+2024-03-12 23:52:51.554666------------------------------------------------------ Precision@1: 48.41%  Precision@1: 73.54%
+
+top1: [66.758, 67.116, 66.074, 65.732, 53.048, 62.92, 61.872, 53.016, 48.414]
+top5: [87.232, 87.45, 86.946, 86.532, 77.424, 84.746, 84.07600000000001, 77.29, 73.544]
+2024-03-12 23:52:51.749264 epoch: 10 step: 0 cls_loss= 3.28496 (82690 samples/sec)
+2024-03-12 23:53:48.203321 epoch: 10 step: 500 cls_loss= 3.78482 (283 samples/sec)
+2024-03-12 23:54:45.209766 epoch: 10 step: 1000 cls_loss= 3.20645 (280 samples/sec)
+2024-03-12 23:55:42.123270 epoch: 10 step: 1500 cls_loss= 3.06980 (281 samples/sec)
+2024-03-12 23:56:38.916429 epoch: 10 step: 2000 cls_loss= 3.44185 (281 samples/sec)
+2024-03-12 23:57:35.896516 epoch: 10 step: 2500 cls_loss= 3.72617 (280 samples/sec)
+2024-03-12 23:58:33.784347 epoch: 10 step: 3000 cls_loss= 3.68293 (276 samples/sec)
+2024-03-13 00:01:38.507956------------------------------------------------------ Precision@1: 42.55%  Precision@1: 68.26%
+
+top1: [66.758, 67.116, 66.074, 65.732, 53.048, 62.92, 61.872, 53.016, 48.414, 42.554]
+top5: [87.232, 87.45, 86.946, 86.532, 77.424, 84.746, 84.07600000000001, 77.29, 73.544, 68.262]
+=> creating model mobilenet_m1 ...
+SSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:176: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-13 00:01:40.796057 epoch: 1 step: 0 cls_loss= 2.02177 (20137 samples/sec)
+2024-03-13 00:02:37.517830 epoch: 1 step: 500 cls_loss= 2.03823 (282 samples/sec)
+2024-03-13 00:03:34.423710 epoch: 1 step: 1000 cls_loss= 2.36853 (281 samples/sec)
+2024-03-13 00:04:31.731825 epoch: 1 step: 1500 cls_loss= 2.90908 (279 samples/sec)
+2024-03-13 00:05:28.667530 epoch: 1 step: 2000 cls_loss= 1.46321 (281 samples/sec)
+2024-03-13 00:06:26.229548 epoch: 1 step: 2500 cls_loss= 2.60214 (278 samples/sec)
+2024-03-13 00:07:22.594818 epoch: 1 step: 3000 cls_loss= 2.77193 (283 samples/sec)
+2024-03-13 00:10:24.208479------------------------------------------------------ Precision@1: 65.88%  Precision@1: 86.68%
+
+top1: [65.88]
+top5: [86.678]
+2024-03-13 00:10:24.408514 epoch: 2 step: 0 cls_loss= 2.50775 (80457 samples/sec)
+2024-03-13 00:11:22.043863 epoch: 2 step: 500 cls_loss= 2.34082 (277 samples/sec)
+2024-03-13 00:12:20.215069 epoch: 2 step: 1000 cls_loss= 2.09764 (275 samples/sec)
+2024-03-13 00:13:17.372835 epoch: 2 step: 1500 cls_loss= 2.45519 (280 samples/sec)
+2024-03-13 00:14:14.791704 epoch: 2 step: 2000 cls_loss= 1.90309 (278 samples/sec)
+2024-03-13 00:15:12.104278 epoch: 2 step: 2500 cls_loss= 1.83141 (279 samples/sec)
+2024-03-13 00:16:10.298731 epoch: 2 step: 3000 cls_loss= 3.62546 (275 samples/sec)
+2024-03-13 00:19:13.508761------------------------------------------------------ Precision@1: 60.01%  Precision@1: 82.39%
+
+top1: [65.88, 60.012]
+top5: [86.678, 82.388]
+2024-03-13 00:19:13.748912 epoch: 3 step: 0 cls_loss= 2.78278 (66946 samples/sec)
+2024-03-13 00:20:10.458751 epoch: 3 step: 500 cls_loss= 2.08762 (282 samples/sec)
+2024-03-13 00:21:06.490493 epoch: 3 step: 1000 cls_loss= 2.17098 (285 samples/sec)
+2024-03-13 00:22:02.594452 epoch: 3 step: 1500 cls_loss= 2.14354 (285 samples/sec)
+2024-03-13 00:22:58.916940 epoch: 3 step: 2000 cls_loss= 3.05901 (284 samples/sec)
+2024-03-13 00:23:55.162104 epoch: 3 step: 2500 cls_loss= 2.81557 (284 samples/sec)
+2024-03-13 00:24:51.135078 epoch: 3 step: 3000 cls_loss= 2.95643 (285 samples/sec)
+2024-03-13 00:27:49.897200------------------------------------------------------ Precision@1: 49.23%  Precision@1: 74.27%
+
+top1: [65.88, 60.012, 49.230000000000004]
+top5: [86.678, 82.388, 74.272]
+2024-03-13 00:27:50.103044 epoch: 4 step: 0 cls_loss= 3.24229 (78156 samples/sec)
+2024-03-13 00:28:46.865495 epoch: 4 step: 500 cls_loss= 2.82979 (281 samples/sec)
+2024-03-13 00:29:43.551352 epoch: 4 step: 1000 cls_loss= 3.09567 (282 samples/sec)
+2024-03-13 00:30:40.137274 epoch: 4 step: 1500 cls_loss= 3.42414 (282 samples/sec)
+2024-03-13 00:31:37.162495 epoch: 4 step: 2000 cls_loss= 2.77834 (280 samples/sec)
+2024-03-13 00:32:34.034893 epoch: 4 step: 2500 cls_loss= 4.49534 (281 samples/sec)
+2024-03-13 00:33:31.553863 epoch: 4 step: 3000 cls_loss= 3.46046 (278 samples/sec)
+2024-03-13 00:36:31.949198------------------------------------------------------ Precision@1: 37.85%  Precision@1: 63.41%
+
+top1: [65.88, 60.012, 49.230000000000004, 37.854]
+top5: [86.678, 82.388, 74.272, 63.410000000000004]
+2024-03-13 00:36:32.150759 epoch: 5 step: 0 cls_loss= 3.80698 (79788 samples/sec)
+2024-03-13 00:37:28.666285 epoch: 5 step: 500 cls_loss= 3.48791 (283 samples/sec)
+2024-03-13 00:38:25.581504 epoch: 5 step: 1000 cls_loss= 3.68556 (281 samples/sec)
+2024-03-13 00:39:22.922037 epoch: 5 step: 1500 cls_loss= 4.25175 (279 samples/sec)
+2024-03-13 00:40:21.719437 epoch: 5 step: 2000 cls_loss= 3.93809 (272 samples/sec)
+2024-03-13 00:41:20.278412 epoch: 5 step: 2500 cls_loss= 4.29703 (273 samples/sec)
+^CTraceback (most recent call last):
+  File "./imgnet_train_eval.py", line 442, in <module>
+    main()
+  File "./imgnet_train_eval.py", line 434, in main
+    train(epoch)
+  File "./imgnet_train_eval.py", line 259, in train
+    for batch_idx, (inputs, targets) in enumerate(train_loader):
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py", line 635, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py", line 1330, in _next_data
+    idx, data = self._get_data()
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py", line 1286, in _get_data
+    success, data = self._try_get_data()
+  File "/usr/local/lib/python3.8/dist-packages/torch/utils/data/dataloader.py", line 1134, in _try_get_data
+    data = self._data_queue.get(timeout=timeout)
+  File "/usr/lib/python3.8/queue.py", line 179, in get
+    self.not_empty.wait(remaining)
+  File "/usr/lib/python3.8/threading.py", line 306, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt
+
+]0;vscode@pytorch: /workspaces/pytorch-dev/SLFP_CNNs[01;32mvscode@pytorch[00m:[01;34m/workspaces/pytorch-dev/SLFP_CNNs[00m$ bash bash_train.sh 
+=> creating model mobilenet_m1 ...
+SSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:176: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-13 00:43:19.750602 epoch: 1 step: 0 cls_loss= 2.26598 (19469 samples/sec)
+2024-03-13 00:44:16.461033 epoch: 1 step: 500 cls_loss= 1.59107 (282 samples/sec)
+2024-03-13 00:45:14.044127 epoch: 1 step: 1000 cls_loss= 1.88385 (277 samples/sec)
+2024-03-13 00:46:11.544896 epoch: 1 step: 1500 cls_loss= 1.61347 (278 samples/sec)
+2024-03-13 00:47:08.895147 epoch: 1 step: 2000 cls_loss= 2.46910 (279 samples/sec)
+2024-03-13 00:48:06.383320 epoch: 1 step: 2500 cls_loss= 1.84084 (278 samples/sec)
+2024-03-13 00:49:04.538222 epoch: 1 step: 3000 cls_loss= 2.04220 (275 samples/sec)
+2024-03-13 00:52:06.781320------------------------------------------------------ Precision@1: 64.80%  Precision@1: 86.09%
+
+top1: [64.804]
+top5: [86.09]
+2024-03-13 00:52:06.987795 epoch: 2 step: 0 cls_loss= 2.03843 (77921 samples/sec)
+2024-03-13 00:53:04.450723 epoch: 2 step: 500 cls_loss= 1.46272 (278 samples/sec)
+2024-03-13 00:54:01.482926 epoch: 2 step: 1000 cls_loss= 1.88980 (280 samples/sec)
+2024-03-13 00:54:58.813277 epoch: 2 step: 1500 cls_loss= 1.91641 (279 samples/sec)
+2024-03-13 00:55:56.003590 epoch: 2 step: 2000 cls_loss= 1.48640 (279 samples/sec)
+2024-03-13 00:56:53.221784 epoch: 2 step: 2500 cls_loss= 1.74983 (279 samples/sec)
+2024-03-13 00:57:50.972461 epoch: 2 step: 3000 cls_loss= 1.59875 (277 samples/sec)
+2024-03-13 01:00:53.041686------------------------------------------------------ Precision@1: 66.82%  Precision@1: 87.33%
+
+top1: [64.804, 66.816]
+top5: [86.09, 87.33]
+2024-03-13 01:00:53.264876 epoch: 3 step: 0 cls_loss= 2.13813 (72059 samples/sec)
+2024-03-13 01:01:50.722115 epoch: 3 step: 500 cls_loss= 1.88897 (278 samples/sec)
+2024-03-13 01:02:47.822011 epoch: 3 step: 1000 cls_loss= 1.51174 (280 samples/sec)
+2024-03-13 01:03:44.364187 epoch: 3 step: 1500 cls_loss= 2.29338 (283 samples/sec)
+2024-03-13 01:04:41.426719 epoch: 3 step: 2000 cls_loss= 2.38362 (280 samples/sec)
+2024-03-13 01:05:38.026877 epoch: 3 step: 2500 cls_loss= 2.07489 (282 samples/sec)
+2024-03-13 01:06:34.812262 epoch: 3 step: 3000 cls_loss= 2.16917 (281 samples/sec)
+2024-03-13 01:09:32.712269------------------------------------------------------ Precision@1: 67.02%  Precision@1: 87.50%
+
+top1: [64.804, 66.816, 67.02]
+top5: [86.09, 87.33, 87.502]
+2024-03-13 01:09:32.911183 epoch: 4 step: 0 cls_loss= 1.02161 (80915 samples/sec)
+2024-03-13 01:10:28.701851 epoch: 4 step: 500 cls_loss= 2.09965 (286 samples/sec)
+2024-03-13 01:11:26.029877 epoch: 4 step: 1000 cls_loss= 1.45429 (279 samples/sec)
+2024-03-13 01:12:22.962643 epoch: 4 step: 1500 cls_loss= 2.24909 (281 samples/sec)
+2024-03-13 01:13:20.257822 epoch: 4 step: 2000 cls_loss= 2.09674 (279 samples/sec)
+2024-03-13 01:14:16.975933 epoch: 4 step: 2500 cls_loss= 2.00903 (282 samples/sec)
+2024-03-13 01:15:14.436241 epoch: 4 step: 3000 cls_loss= 1.93853 (278 samples/sec)
+2024-03-13 01:18:15.631963------------------------------------------------------ Precision@1: 66.68%  Precision@1: 87.28%
+
+top1: [64.804, 66.816, 67.02, 66.678]
+top5: [86.09, 87.33, 87.502, 87.28]
+2024-03-13 01:18:15.839497 epoch: 5 step: 0 cls_loss= 1.30509 (77500 samples/sec)
+2024-03-13 01:19:13.205960 epoch: 5 step: 500 cls_loss= 1.83219 (278 samples/sec)
+2024-03-13 01:20:09.992191 epoch: 5 step: 1000 cls_loss= 1.64361 (281 samples/sec)
+2024-03-13 01:21:07.464583 epoch: 5 step: 1500 cls_loss= 1.82989 (278 samples/sec)
+2024-03-13 01:22:05.883040 epoch: 5 step: 2000 cls_loss= 1.79428 (273 samples/sec)
+2024-03-13 01:23:04.488957 epoch: 5 step: 2500 cls_loss= 1.95777 (273 samples/sec)
+2024-03-13 01:24:02.546396 epoch: 5 step: 3000 cls_loss= 1.75667 (275 samples/sec)
+2024-03-13 01:27:01.785923------------------------------------------------------ Precision@1: 66.91%  Precision@1: 87.39%
+
+top1: [64.804, 66.816, 67.02, 66.678, 66.914]
+top5: [86.09, 87.33, 87.502, 87.28, 87.392]
+2024-03-13 01:27:01.994385 epoch: 6 step: 0 cls_loss= 1.81132 (77228 samples/sec)
+2024-03-13 01:27:59.411256 epoch: 6 step: 500 cls_loss= 1.51902 (278 samples/sec)
+2024-03-13 01:28:56.834263 epoch: 6 step: 1000 cls_loss= 1.96503 (278 samples/sec)
+2024-03-13 01:29:54.349229 epoch: 6 step: 1500 cls_loss= 2.47931 (278 samples/sec)
+2024-03-13 01:30:51.724800 epoch: 6 step: 2000 cls_loss= 1.91398 (278 samples/sec)
+2024-03-13 01:31:49.161636 epoch: 6 step: 2500 cls_loss= 1.85239 (278 samples/sec)
+2024-03-13 01:32:46.534963 epoch: 6 step: 3000 cls_loss= 1.93834 (278 samples/sec)
+2024-03-13 01:35:48.815096------------------------------------------------------ Precision@1: 66.56%  Precision@1: 87.13%
+
+top1: [64.804, 66.816, 67.02, 66.678, 66.914, 66.56]
+top5: [86.09, 87.33, 87.502, 87.28, 87.392, 87.128]
+2024-03-13 01:35:49.019442 epoch: 7 step: 0 cls_loss= 1.86349 (78710 samples/sec)
+2024-03-13 01:36:46.721265 epoch: 7 step: 500 cls_loss= 1.60048 (277 samples/sec)
+2024-03-13 01:37:44.809755 epoch: 7 step: 1000 cls_loss= 2.16303 (275 samples/sec)
+2024-03-13 01:38:42.980299 epoch: 7 step: 1500 cls_loss= 2.23360 (275 samples/sec)
+2024-03-13 01:39:40.748646 epoch: 7 step: 2000 cls_loss= 2.03740 (277 samples/sec)
+2024-03-13 01:40:38.795397 epoch: 7 step: 2500 cls_loss= 1.68438 (275 samples/sec)
+2024-03-13 01:41:36.664800 epoch: 7 step: 3000 cls_loss= 1.91000 (276 samples/sec)
+2024-03-13 01:44:35.618927------------------------------------------------------ Precision@1: 67.24%  Precision@1: 87.56%
+
+top1: [64.804, 66.816, 67.02, 66.678, 66.914, 66.56, 67.244]
+top5: [86.09, 87.33, 87.502, 87.28, 87.392, 87.128, 87.558]
+2024-03-13 01:44:35.818849 epoch: 8 step: 0 cls_loss= 2.10935 (80452 samples/sec)
+2024-03-13 01:45:31.989335 epoch: 8 step: 500 cls_loss= 1.68721 (284 samples/sec)
+2024-03-13 01:46:28.913218 epoch: 8 step: 1000 cls_loss= 1.77129 (281 samples/sec)
+2024-03-13 01:47:25.452850 epoch: 8 step: 1500 cls_loss= 1.77080 (283 samples/sec)
+2024-03-13 01:48:21.638106 epoch: 8 step: 2000 cls_loss= 1.41463 (284 samples/sec)
+2024-03-13 01:49:18.844784 epoch: 8 step: 2500 cls_loss= 2.33860 (279 samples/sec)
+2024-03-13 01:50:16.103944 epoch: 8 step: 3000 cls_loss= 1.49287 (279 samples/sec)
+2024-03-13 01:53:19.529657------------------------------------------------------ Precision@1: 66.85%  Precision@1: 87.38%
+
+top1: [64.804, 66.816, 67.02, 66.678, 66.914, 66.56, 67.244, 66.852]
+top5: [86.09, 87.33, 87.502, 87.28, 87.392, 87.128, 87.558, 87.384]
+2024-03-13 01:53:19.733960 epoch: 9 step: 0 cls_loss= 2.27134 (78711 samples/sec)
+2024-03-13 01:54:17.212667 epoch: 9 step: 500 cls_loss= 2.31080 (278 samples/sec)
+2024-03-13 01:55:15.141273 epoch: 9 step: 1000 cls_loss= 1.41701 (276 samples/sec)
+2024-03-13 01:56:13.416150 epoch: 9 step: 1500 cls_loss= 1.76856 (274 samples/sec)
+2024-03-13 01:57:11.019095 epoch: 9 step: 2000 cls_loss= 2.29168 (277 samples/sec)
+2024-03-13 01:58:07.994770 epoch: 9 step: 2500 cls_loss= 1.59524 (280 samples/sec)
+2024-03-13 01:59:04.749802 epoch: 9 step: 3000 cls_loss= 2.39605 (281 samples/sec)
+2024-03-13 02:02:09.889345------------------------------------------------------ Precision@1: 66.12%  Precision@1: 86.86%
+
+top1: [64.804, 66.816, 67.02, 66.678, 66.914, 66.56, 67.244, 66.852, 66.118]
+top5: [86.09, 87.33, 87.502, 87.28, 87.392, 87.128, 87.558, 87.384, 86.862]
+2024-03-13 02:02:10.097968 epoch: 10 step: 0 cls_loss= 1.71060 (77134 samples/sec)
+2024-03-13 02:03:08.428869 epoch: 10 step: 500 cls_loss= 1.87780 (274 samples/sec)
+2024-03-13 02:04:05.727096 epoch: 10 step: 1000 cls_loss= 2.15263 (279 samples/sec)
+2024-03-13 02:05:03.535538 epoch: 10 step: 1500 cls_loss= 1.90797 (276 samples/sec)
+2024-03-13 02:06:01.297990 epoch: 10 step: 2000 cls_loss= 1.76068 (277 samples/sec)
+2024-03-13 02:06:58.892663 epoch: 10 step: 2500 cls_loss= 1.85041 (277 samples/sec)
+2024-03-13 02:07:56.720203 epoch: 10 step: 3000 cls_loss= 1.56240 (276 samples/sec)
+2024-03-13 02:10:59.671159------------------------------------------------------ Precision@1: 66.87%  Precision@1: 87.46%
+
+top1: [64.804, 66.816, 67.02, 66.678, 66.914, 66.56, 67.244, 66.852, 66.118, 66.872]
+top5: [86.09, 87.33, 87.502, 87.28, 87.392, 87.128, 87.558, 87.384, 86.862, 87.456]
+=> creating model mobilenet_m1 ...
+SSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:176: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-13 02:11:01.952546 epoch: 1 step: 0 cls_loss= 2.06398 (19447 samples/sec)
+2024-03-13 02:11:59.087453 epoch: 1 step: 500 cls_loss= 2.39469 (280 samples/sec)
+2024-03-13 02:12:56.922207 epoch: 1 step: 1000 cls_loss= 1.81661 (276 samples/sec)
+2024-03-13 02:13:54.775237 epoch: 1 step: 1500 cls_loss= 1.12336 (276 samples/sec)
+2024-03-13 02:14:52.757350 epoch: 1 step: 2000 cls_loss= 1.86006 (276 samples/sec)
+2024-03-13 02:15:50.426936 epoch: 1 step: 2500 cls_loss= 2.44492 (277 samples/sec)
+2024-03-13 02:16:48.098233 epoch: 1 step: 3000 cls_loss= 1.88450 (277 samples/sec)
+2024-03-13 02:19:47.292503------------------------------------------------------ Precision@1: 66.36%  Precision@1: 87.15%
+
+top1: [66.364]
+top5: [87.154]
+2024-03-13 02:19:47.482742 epoch: 2 step: 0 cls_loss= 2.87329 (84602 samples/sec)
+2024-03-13 02:20:44.297936 epoch: 2 step: 500 cls_loss= 2.04934 (281 samples/sec)
+2024-03-13 02:21:41.370606 epoch: 2 step: 1000 cls_loss= 1.49851 (280 samples/sec)
+2024-03-13 02:22:38.550509 epoch: 2 step: 1500 cls_loss= 1.80909 (279 samples/sec)
+2024-03-13 02:23:35.596293 epoch: 2 step: 2000 cls_loss= 1.46602 (280 samples/sec)
+2024-03-13 02:24:32.165919 epoch: 2 step: 2500 cls_loss= 1.82876 (282 samples/sec)
+2024-03-13 02:25:28.926326 epoch: 2 step: 3000 cls_loss= 1.36980 (281 samples/sec)
+2024-03-13 02:28:30.596861------------------------------------------------------ Precision@1: 66.66%  Precision@1: 87.35%
+
+top1: [66.364, 66.662]
+top5: [87.154, 87.354]
+2024-03-13 02:28:30.815841 epoch: 3 step: 0 cls_loss= 1.60801 (73439 samples/sec)
+2024-03-13 02:29:27.821497 epoch: 3 step: 500 cls_loss= 1.96746 (280 samples/sec)
+2024-03-13 02:30:23.862588 epoch: 3 step: 1000 cls_loss= 1.90093 (285 samples/sec)
+2024-03-13 02:31:20.548878 epoch: 3 step: 1500 cls_loss= 2.48300 (282 samples/sec)
+2024-03-13 02:32:17.503815 epoch: 3 step: 2000 cls_loss= 1.80491 (281 samples/sec)
+2024-03-13 02:33:14.190545 epoch: 3 step: 2500 cls_loss= 1.84388 (282 samples/sec)
+2024-03-13 02:34:11.187036 epoch: 3 step: 3000 cls_loss= 3.20064 (280 samples/sec)
+2024-03-13 02:37:11.067242------------------------------------------------------ Precision@1: 66.99%  Precision@1: 87.52%
+
+top1: [66.364, 66.662, 66.986]
+top5: [87.154, 87.354, 87.518]
+2024-03-13 02:37:11.263869 epoch: 4 step: 0 cls_loss= 2.77202 (81838 samples/sec)
+2024-03-13 02:38:07.864574 epoch: 4 step: 500 cls_loss= 1.74141 (282 samples/sec)
+2024-03-13 02:39:04.899237 epoch: 4 step: 1000 cls_loss= 1.28749 (280 samples/sec)
+2024-03-13 02:40:02.002893 epoch: 4 step: 1500 cls_loss= 1.52373 (280 samples/sec)
+2024-03-13 02:40:58.645815 epoch: 4 step: 2000 cls_loss= 1.50069 (282 samples/sec)
+2024-03-13 02:41:54.980099 epoch: 4 step: 2500 cls_loss= 1.67944 (284 samples/sec)
+2024-03-13 02:42:51.529338 epoch: 4 step: 3000 cls_loss= 2.34823 (283 samples/sec)
+2024-03-13 02:45:51.893164------------------------------------------------------ Precision@1: 66.78%  Precision@1: 87.49%
+
+top1: [66.364, 66.662, 66.986, 66.778]
+top5: [87.154, 87.354, 87.518, 87.494]
+2024-03-13 02:45:52.098869 epoch: 5 step: 0 cls_loss= 1.85887 (78244 samples/sec)
+2024-03-13 02:46:48.410908 epoch: 5 step: 500 cls_loss= 1.98457 (284 samples/sec)
+2024-03-13 02:47:44.941763 epoch: 5 step: 1000 cls_loss= 1.13866 (283 samples/sec)
+2024-03-13 02:48:41.261849 epoch: 5 step: 1500 cls_loss= 1.38974 (284 samples/sec)
+2024-03-13 02:49:38.063560 epoch: 5 step: 2000 cls_loss= 1.82999 (281 samples/sec)
+2024-03-13 02:50:34.785332 epoch: 5 step: 2500 cls_loss= 2.10528 (282 samples/sec)
+2024-03-13 02:51:32.075089 epoch: 5 step: 3000 cls_loss= 1.58156 (279 samples/sec)
+2024-03-13 02:54:32.305155------------------------------------------------------ Precision@1: 66.99%  Precision@1: 87.55%
+
+top1: [66.364, 66.662, 66.986, 66.778, 66.992]
+top5: [87.154, 87.354, 87.518, 87.494, 87.548]
+2024-03-13 02:54:32.502986 epoch: 6 step: 0 cls_loss= 2.03005 (81171 samples/sec)
+2024-03-13 02:55:28.257464 epoch: 6 step: 500 cls_loss= 2.54826 (287 samples/sec)
+2024-03-13 02:56:25.514148 epoch: 6 step: 1000 cls_loss= 1.83961 (279 samples/sec)
+2024-03-13 02:57:22.561686 epoch: 6 step: 1500 cls_loss= 1.53728 (280 samples/sec)
+2024-03-13 02:58:19.789199 epoch: 6 step: 2000 cls_loss= 1.46811 (279 samples/sec)
+2024-03-13 02:59:17.092565 epoch: 6 step: 2500 cls_loss= 2.19642 (279 samples/sec)
+2024-03-13 03:00:13.048822 epoch: 6 step: 3000 cls_loss= 2.49054 (286 samples/sec)
+2024-03-13 03:03:08.171066------------------------------------------------------ Precision@1: 66.84%  Precision@1: 87.38%
+
+top1: [66.364, 66.662, 66.986, 66.778, 66.992, 66.83800000000001]
+top5: [87.154, 87.354, 87.518, 87.494, 87.548, 87.378]
+2024-03-13 03:03:08.382007 epoch: 7 step: 0 cls_loss= 2.46652 (76308 samples/sec)
+2024-03-13 03:04:04.456981 epoch: 7 step: 500 cls_loss= 1.67092 (285 samples/sec)
+2024-03-13 03:05:01.130361 epoch: 7 step: 1000 cls_loss= 1.60632 (282 samples/sec)
+2024-03-13 03:05:57.523804 epoch: 7 step: 1500 cls_loss= 1.56326 (283 samples/sec)
+2024-03-13 03:06:53.980477 epoch: 7 step: 2000 cls_loss= 1.93998 (283 samples/sec)
+2024-03-13 03:07:51.171916 epoch: 7 step: 2500 cls_loss= 2.48920 (279 samples/sec)
+2024-03-13 03:08:47.944046 epoch: 7 step: 3000 cls_loss= 1.49071 (281 samples/sec)
+2024-03-13 03:11:47.117954------------------------------------------------------ Precision@1: 65.92%  Precision@1: 86.90%
+
+top1: [66.364, 66.662, 66.986, 66.778, 66.992, 66.83800000000001, 65.92]
+top5: [87.154, 87.354, 87.518, 87.494, 87.548, 87.378, 86.902]
+2024-03-13 03:11:47.356010 epoch: 8 step: 0 cls_loss= 1.84923 (67534 samples/sec)
+2024-03-13 03:12:45.033365 epoch: 8 step: 500 cls_loss= 1.85243 (277 samples/sec)
+2024-03-13 03:13:42.755198 epoch: 8 step: 1000 cls_loss= 1.66734 (277 samples/sec)
+2024-03-13 03:14:39.861756 epoch: 8 step: 1500 cls_loss= 1.40710 (280 samples/sec)
+2024-03-13 03:15:37.239713 epoch: 8 step: 2000 cls_loss= 2.55069 (278 samples/sec)
+2024-03-13 03:16:34.716506 epoch: 8 step: 2500 cls_loss= 1.38096 (278 samples/sec)
+2024-03-13 03:17:32.306979 epoch: 8 step: 3000 cls_loss= 2.50230 (277 samples/sec)
+2024-03-13 03:20:33.036443------------------------------------------------------ Precision@1: 66.60%  Precision@1: 87.18%
+
+top1: [66.364, 66.662, 66.986, 66.778, 66.992, 66.83800000000001, 65.92, 66.6]
+top5: [87.154, 87.354, 87.518, 87.494, 87.548, 87.378, 86.902, 87.184]
+2024-03-13 03:20:33.244191 epoch: 9 step: 0 cls_loss= 1.89358 (77474 samples/sec)
+2024-03-13 03:21:29.804327 epoch: 9 step: 500 cls_loss= 1.84736 (282 samples/sec)
+2024-03-13 03:22:26.608035 epoch: 9 step: 1000 cls_loss= 1.97699 (281 samples/sec)
+2024-03-13 03:23:24.218386 epoch: 9 step: 1500 cls_loss= 1.42393 (277 samples/sec)
+2024-03-13 03:24:21.488777 epoch: 9 step: 2000 cls_loss= 1.55251 (279 samples/sec)
+2024-03-13 03:25:18.640428 epoch: 9 step: 2500 cls_loss= 2.08823 (280 samples/sec)
+2024-03-13 03:26:16.219025 epoch: 9 step: 3000 cls_loss= 2.05508 (277 samples/sec)
+2024-03-13 03:29:17.771763------------------------------------------------------ Precision@1: 66.40%  Precision@1: 87.12%
+
+top1: [66.364, 66.662, 66.986, 66.778, 66.992, 66.83800000000001, 65.92, 66.6, 66.396]
+top5: [87.154, 87.354, 87.518, 87.494, 87.548, 87.378, 86.902, 87.184, 87.124]
+2024-03-13 03:29:17.968425 epoch: 10 step: 0 cls_loss= 2.20423 (81815 samples/sec)
+2024-03-13 03:30:15.003821 epoch: 10 step: 500 cls_loss= 1.78533 (280 samples/sec)
+2024-03-13 03:31:12.562089 epoch: 10 step: 1000 cls_loss= 1.35111 (278 samples/sec)
+2024-03-13 03:32:10.113993 epoch: 10 step: 1500 cls_loss= 2.46118 (278 samples/sec)
+2024-03-13 03:33:06.863467 epoch: 10 step: 2000 cls_loss= 1.29700 (282 samples/sec)
+2024-03-13 03:34:03.109766 epoch: 10 step: 2500 cls_loss= 1.96148 (284 samples/sec)
+2024-03-13 03:34:59.849539 epoch: 10 step: 3000 cls_loss= 2.56931 (282 samples/sec)
+2024-03-13 03:38:03.390372------------------------------------------------------ Precision@1: 65.89%  Precision@1: 86.96%
+
+top1: [66.364, 66.662, 66.986, 66.778, 66.992, 66.83800000000001, 65.92, 66.6, 66.396, 65.89]
+top5: [87.154, 87.354, 87.518, 87.494, 87.548, 87.378, 86.902, 87.184, 87.124, 86.956]
+=> creating model mobilenet_m1 ...
+SSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:176: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-13 03:38:05.695108 epoch: 1 step: 0 cls_loss= 1.93420 (19021 samples/sec)
+2024-03-13 03:39:01.800864 epoch: 1 step: 500 cls_loss= 1.93109 (285 samples/sec)
+2024-03-13 03:39:57.683369 epoch: 1 step: 1000 cls_loss= 1.92421 (286 samples/sec)
+2024-03-13 03:40:54.221241 epoch: 1 step: 1500 cls_loss= 1.45433 (283 samples/sec)
+2024-03-13 03:41:50.637705 epoch: 1 step: 2000 cls_loss= 1.63762 (283 samples/sec)
+2024-03-13 03:42:48.235808 epoch: 1 step: 2500 cls_loss= 2.55594 (277 samples/sec)
+2024-03-13 03:43:46.482108 epoch: 1 step: 3000 cls_loss= 2.10794 (274 samples/sec)
+2024-03-13 03:46:46.914191------------------------------------------------------ Precision@1: 66.57%  Precision@1: 87.12%
+
+top1: [66.57000000000001]
+top5: [87.122]
+2024-03-13 03:46:47.112726 epoch: 2 step: 0 cls_loss= 2.65301 (81069 samples/sec)
+2024-03-13 03:47:44.402074 epoch: 2 step: 500 cls_loss= 1.63596 (279 samples/sec)
+2024-03-13 03:48:41.216097 epoch: 2 step: 1000 cls_loss= 2.05041 (281 samples/sec)
+2024-03-13 03:49:37.399415 epoch: 2 step: 1500 cls_loss= 2.08739 (284 samples/sec)
+2024-03-13 03:50:33.977953 epoch: 2 step: 2000 cls_loss= 1.18809 (282 samples/sec)
+2024-03-13 03:51:30.147336 epoch: 2 step: 2500 cls_loss= 2.64289 (284 samples/sec)
+2024-03-13 03:52:26.727063 epoch: 2 step: 3000 cls_loss= 2.00149 (282 samples/sec)
+2024-03-13 03:55:25.940130------------------------------------------------------ Precision@1: 66.63%  Precision@1: 87.39%
+
+top1: [66.57000000000001, 66.626]
+top5: [87.122, 87.392]
+2024-03-13 03:55:26.134092 epoch: 3 step: 0 cls_loss= 2.00992 (82951 samples/sec)
+2024-03-13 03:56:22.162462 epoch: 3 step: 500 cls_loss= 2.42525 (285 samples/sec)
+2024-03-13 03:57:19.492461 epoch: 3 step: 1000 cls_loss= 1.79554 (279 samples/sec)
+2024-03-13 03:58:16.516533 epoch: 3 step: 1500 cls_loss= 1.35775 (280 samples/sec)
+2024-03-13 03:59:13.575946 epoch: 3 step: 2000 cls_loss= 1.62811 (280 samples/sec)
+2024-03-13 04:00:10.587274 epoch: 3 step: 2500 cls_loss= 1.57859 (280 samples/sec)
+2024-03-13 04:01:07.479368 epoch: 3 step: 3000 cls_loss= 1.83901 (281 samples/sec)
+2024-03-13 04:04:07.249858------------------------------------------------------ Precision@1: 66.98%  Precision@1: 87.51%
+
+top1: [66.57000000000001, 66.626, 66.978]
+top5: [87.122, 87.392, 87.512]
+2024-03-13 04:04:07.459608 epoch: 4 step: 0 cls_loss= 2.24089 (76632 samples/sec)
+2024-03-13 04:05:04.582923 epoch: 4 step: 500 cls_loss= 2.52055 (280 samples/sec)
+2024-03-13 04:06:02.094098 epoch: 4 step: 1000 cls_loss= 2.05204 (278 samples/sec)
+2024-03-13 04:06:59.560280 epoch: 4 step: 1500 cls_loss= 1.96615 (278 samples/sec)
+2024-03-13 04:07:57.078180 epoch: 4 step: 2000 cls_loss= 1.84293 (278 samples/sec)
+2024-03-13 04:08:54.785113 epoch: 4 step: 2500 cls_loss= 1.75235 (277 samples/sec)
+2024-03-13 04:09:53.268499 epoch: 4 step: 3000 cls_loss= 2.80010 (273 samples/sec)
+2024-03-13 04:12:55.121659------------------------------------------------------ Precision@1: 67.05%  Precision@1: 87.52%
+
+top1: [66.57000000000001, 66.626, 66.978, 67.048]
+top5: [87.122, 87.392, 87.512, 87.522]
+2024-03-13 04:12:55.324104 epoch: 5 step: 0 cls_loss= 2.10612 (79475 samples/sec)
+2024-03-13 04:13:52.681987 epoch: 5 step: 500 cls_loss= 1.56214 (279 samples/sec)
+2024-03-13 04:14:50.009326 epoch: 5 step: 1000 cls_loss= 1.61545 (279 samples/sec)
+2024-03-13 04:15:47.319496 epoch: 5 step: 1500 cls_loss= 1.15650 (279 samples/sec)
+2024-03-13 04:16:44.755414 epoch: 5 step: 2000 cls_loss= 1.72021 (278 samples/sec)
+2024-03-13 04:17:42.037310 epoch: 5 step: 2500 cls_loss= 1.94145 (279 samples/sec)
+2024-03-13 04:18:40.948933 epoch: 5 step: 3000 cls_loss= 1.54934 (271 samples/sec)
+2024-03-13 04:21:44.352813------------------------------------------------------ Precision@1: 67.24%  Precision@1: 87.59%
+
+top1: [66.57000000000001, 66.626, 66.978, 67.048, 67.238]
+top5: [87.122, 87.392, 87.512, 87.522, 87.58800000000001]
+2024-03-13 04:21:44.545684 epoch: 6 step: 0 cls_loss= 1.88638 (83364 samples/sec)
+2024-03-13 04:22:41.936132 epoch: 6 step: 500 cls_loss= 2.26707 (278 samples/sec)
+2024-03-13 04:23:39.121225 epoch: 6 step: 1000 cls_loss= 1.82107 (279 samples/sec)
+2024-03-13 04:24:36.149667 epoch: 6 step: 1500 cls_loss= 1.85550 (280 samples/sec)
+2024-03-13 04:25:33.569074 epoch: 6 step: 2000 cls_loss= 2.33566 (278 samples/sec)
+2024-03-13 04:26:31.397955 epoch: 6 step: 2500 cls_loss= 1.60251 (276 samples/sec)
+2024-03-13 04:27:29.183378 epoch: 6 step: 3000 cls_loss= 1.59808 (276 samples/sec)
+2024-03-13 04:30:27.995085------------------------------------------------------ Precision@1: 67.13%  Precision@1: 87.57%
+
+top1: [66.57000000000001, 66.626, 66.978, 67.048, 67.238, 67.13]
+top5: [87.122, 87.392, 87.512, 87.522, 87.58800000000001, 87.574]
+2024-03-13 04:30:28.196417 epoch: 7 step: 0 cls_loss= 2.39360 (79907 samples/sec)
+2024-03-13 04:31:25.156014 epoch: 7 step: 500 cls_loss= 1.94717 (280 samples/sec)
+2024-03-13 04:32:22.851856 epoch: 7 step: 1000 cls_loss= 1.47351 (277 samples/sec)
+2024-03-13 04:33:20.089314 epoch: 7 step: 1500 cls_loss= 1.87308 (279 samples/sec)
+2024-03-13 04:34:16.622624 epoch: 7 step: 2000 cls_loss= 2.38659 (283 samples/sec)
+2024-03-13 04:35:12.797595 epoch: 7 step: 2500 cls_loss= 2.01102 (284 samples/sec)
+2024-03-13 04:36:09.256207 epoch: 7 step: 3000 cls_loss= 1.93588 (283 samples/sec)
+2024-03-13 04:39:11.445235------------------------------------------------------ Precision@1: 66.99%  Precision@1: 87.45%
+
+top1: [66.57000000000001, 66.626, 66.978, 67.048, 67.238, 67.13, 66.986]
+top5: [87.122, 87.392, 87.512, 87.522, 87.58800000000001, 87.574, 87.452]
+2024-03-13 04:39:11.641865 epoch: 8 step: 0 cls_loss= 1.75773 (81829 samples/sec)
+2024-03-13 04:40:09.343941 epoch: 8 step: 500 cls_loss= 1.81708 (277 samples/sec)
+2024-03-13 04:41:06.867723 epoch: 8 step: 1000 cls_loss= 3.24361 (278 samples/sec)
+2024-03-13 04:42:04.229604 epoch: 8 step: 1500 cls_loss= 1.47155 (279 samples/sec)
+2024-03-13 04:43:01.751529 epoch: 8 step: 2000 cls_loss= 2.29911 (278 samples/sec)
+2024-03-13 04:43:59.499998 epoch: 8 step: 2500 cls_loss= 1.07928 (277 samples/sec)
+2024-03-13 04:44:57.588303 epoch: 8 step: 3000 cls_loss= 1.94852 (275 samples/sec)
+2024-03-13 04:47:58.643695------------------------------------------------------ Precision@1: 66.92%  Precision@1: 87.52%
+
+top1: [66.57000000000001, 66.626, 66.978, 67.048, 67.238, 67.13, 66.986, 66.92]
+top5: [87.122, 87.392, 87.512, 87.522, 87.58800000000001, 87.574, 87.452, 87.516]
+2024-03-13 04:47:58.847692 epoch: 9 step: 0 cls_loss= 1.59817 (78887 samples/sec)
+2024-03-13 04:48:56.472249 epoch: 9 step: 500 cls_loss= 1.90024 (277 samples/sec)
+2024-03-13 04:49:54.143912 epoch: 9 step: 1000 cls_loss= 1.93498 (277 samples/sec)
+2024-03-13 04:50:52.014452 epoch: 9 step: 1500 cls_loss= 1.40817 (276 samples/sec)
+2024-03-13 04:51:50.030878 epoch: 9 step: 2000 cls_loss= 2.43540 (275 samples/sec)
+2024-03-13 04:52:48.198389 epoch: 9 step: 2500 cls_loss= 1.86560 (275 samples/sec)
+2024-03-13 04:53:46.582350 epoch: 9 step: 3000 cls_loss= 2.06966 (274 samples/sec)
+2024-03-13 04:56:48.958203------------------------------------------------------ Precision@1: 66.68%  Precision@1: 87.40%
+
+top1: [66.57000000000001, 66.626, 66.978, 67.048, 67.238, 67.13, 66.986, 66.92, 66.684]
+top5: [87.122, 87.392, 87.512, 87.522, 87.58800000000001, 87.574, 87.452, 87.516, 87.398]
+2024-03-13 04:56:49.159466 epoch: 10 step: 0 cls_loss= 2.39636 (79921 samples/sec)
+2024-03-13 04:57:46.535554 epoch: 10 step: 500 cls_loss= 2.12149 (278 samples/sec)
+2024-03-13 04:58:43.830757 epoch: 10 step: 1000 cls_loss= 1.97900 (279 samples/sec)
+2024-03-13 04:59:41.123812 epoch: 10 step: 1500 cls_loss= 1.82053 (279 samples/sec)
+2024-03-13 05:00:38.572737 epoch: 10 step: 2000 cls_loss= 2.10898 (278 samples/sec)
+2024-03-13 05:01:35.567406 epoch: 10 step: 2500 cls_loss= 2.14933 (280 samples/sec)
+2024-03-13 05:02:32.970587 epoch: 10 step: 3000 cls_loss= 2.47230 (278 samples/sec)
+2024-03-13 05:05:30.108232------------------------------------------------------ Precision@1: 66.99%  Precision@1: 87.47%
+
+top1: [66.57000000000001, 66.626, 66.978, 67.048, 67.238, 67.13, 66.986, 66.92, 66.684, 66.986]
+top5: [87.122, 87.392, 87.512, 87.522, 87.58800000000001, 87.574, 87.452, 87.516, 87.398, 87.47200000000001]
+=> creating model mobilenet_m1 ...
+SSGD
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:138: UserWarning: Detected call of `lr_scheduler.step()` before `optimizer.step()`. In PyTorch 1.1.0 and later, you should call them in the opposite order: `optimizer.step()` before `lr_scheduler.step()`.  Failure to do this will result in PyTorch skipping the first value of the learning rate schedule. See more details at https://pytorch.org/docs/stable/optim.html#how-to-adjust-learning-rate
+  warnings.warn("Detected call of `lr_scheduler.step()` before `optimizer.step()`. "
+/usr/local/lib/python3.8/dist-packages/torch/optim/lr_scheduler.py:151: UserWarning: The epoch parameter in `scheduler.step()` was not necessary and is being deprecated where possible. Please use `scheduler.step()` to step the scheduler. During the deprecation, if epoch is different from None, the closed form is used instead of the new chainable form, where available. Please open an issue if you are unable to replicate your use case: https://github.com/pytorch/pytorch/issues/new/choose.
+  warnings.warn(EPOCH_DEPRECATION_WARNING, UserWarning)
+./imgnet_train_eval.py:176: UserWarning: This overload of add_ is deprecated:
+	add_(Number alpha, Tensor other)
+Consider using one of the following signatures instead:
+	add_(Tensor other, *, Number alpha) (Triggered internally at /opt/pytorch/pytorch/torch/csrc/utils/python_arg_parser.cpp:1488.)
+  d_p.add_(weight_decay, p.data)
+2024-03-13 05:05:32.423398 epoch: 1 step: 0 cls_loss= 1.97694 (19078 samples/sec)
+2024-03-13 05:06:28.916130 epoch: 1 step: 500 cls_loss= 1.82853 (283 samples/sec)
+2024-03-13 05:07:26.367136 epoch: 1 step: 1000 cls_loss= 1.93252 (278 samples/sec)
+2024-03-13 05:08:23.762276 epoch: 1 step: 1500 cls_loss= 1.57716 (278 samples/sec)
+2024-03-13 05:09:21.704519 epoch: 1 step: 2000 cls_loss= 2.02038 (276 samples/sec)
+2024-03-13 05:10:19.958777 epoch: 1 step: 2500 cls_loss= 1.91267 (274 samples/sec)
+2024-03-13 05:11:18.273422 epoch: 1 step: 3000 cls_loss= 2.46558 (274 samples/sec)
+2024-03-13 05:14:19.210446------------------------------------------------------ Precision@1: 65.81%  Precision@1: 86.70%
+
+top1: [65.812]
+top5: [86.69800000000001]
+2024-03-13 05:14:19.401365 epoch: 2 step: 0 cls_loss= 2.55038 (84309 samples/sec)
+2024-03-13 05:15:16.808039 epoch: 2 step: 500 cls_loss= 1.85612 (278 samples/sec)
+2024-03-13 05:16:13.457564 epoch: 2 step: 1000 cls_loss= 2.69525 (282 samples/sec)
+2024-03-13 05:17:10.001201 epoch: 2 step: 1500 cls_loss= 2.34143 (283 samples/sec)
+2024-03-13 05:18:06.580525 epoch: 2 step: 2000 cls_loss= 1.90268 (282 samples/sec)
+2024-03-13 05:19:03.659656 epoch: 2 step: 2500 cls_loss= 1.93099 (280 samples/sec)
+2024-03-13 05:20:00.772410 epoch: 2 step: 3000 cls_loss= 2.19701 (280 samples/sec)
+2024-03-13 05:22:59.751149------------------------------------------------------ Precision@1: 66.34%  Precision@1: 87.04%
+
+top1: [65.812, 66.33800000000001]
+top5: [86.69800000000001, 87.038]
+2024-03-13 05:22:59.936968 epoch: 3 step: 0 cls_loss= 1.69085 (86521 samples/sec)
+2024-03-13 05:23:57.465291 epoch: 3 step: 500 cls_loss= 1.42546 (278 samples/sec)
+2024-03-13 05:24:53.905742 epoch: 3 step: 1000 cls_loss= 1.67684 (283 samples/sec)
+2024-03-13 05:25:50.342281 epoch: 3 step: 1500 cls_loss= 2.33823 (283 samples/sec)
+2024-03-13 05:26:46.094251 epoch: 3 step: 2000 cls_loss= 1.70374 (287 samples/sec)
+2024-03-13 05:27:41.509495 epoch: 3 step: 2500 cls_loss= 2.48511 (288 samples/sec)
+2024-03-13 05:28:38.565066 epoch: 3 step: 3000 cls_loss= 2.05761 (280 samples/sec)
+2024-03-13 05:31:38.523043------------------------------------------------------ Precision@1: 66.47%  Precision@1: 86.93%
+
+top1: [65.812, 66.33800000000001, 66.468]
+top5: [86.69800000000001, 87.038, 86.926]
+2024-03-13 05:31:38.716095 epoch: 4 step: 0 cls_loss= 2.42892 (83349 samples/sec)
+2024-03-13 05:32:35.577260 epoch: 4 step: 500 cls_loss= 1.87519 (281 samples/sec)
+2024-03-13 05:33:31.752410 epoch: 4 step: 1000 cls_loss= 1.66541 (284 samples/sec)
+2024-03-13 05:34:27.425608 epoch: 4 step: 1500 cls_loss= 1.33706 (287 samples/sec)
+2024-03-13 05:35:23.439556 epoch: 4 step: 2000 cls_loss= 1.52770 (285 samples/sec)
+2024-03-13 05:36:20.143801 epoch: 4 step: 2500 cls_loss= 2.35089 (282 samples/sec)
+2024-03-13 05:37:16.860531 epoch: 4 step: 3000 cls_loss= 2.16800 (282 samples/sec)
+2024-03-13 05:40:18.768766------------------------------------------------------ Precision@1: 65.39%  Precision@1: 86.37%
+
+top1: [65.812, 66.33800000000001, 66.468, 65.386]
+top5: [86.69800000000001, 87.038, 86.926, 86.374]
+2024-03-13 05:40:18.982489 epoch: 5 step: 0 cls_loss= 2.09920 (75153 samples/sec)
+2024-03-13 05:41:16.976398 epoch: 5 step: 500 cls_loss= 2.28282 (275 samples/sec)
+2024-03-13 05:42:14.100772 epoch: 5 step: 1000 cls_loss= 1.41111 (280 samples/sec)
+2024-03-13 05:43:11.923438 epoch: 5 step: 1500 cls_loss= 1.55090 (276 samples/sec)
+2024-03-13 05:44:09.239003 epoch: 5 step: 2000 cls_loss= 2.12878 (279 samples/sec)
+2024-03-13 05:45:06.970390 epoch: 5 step: 2500 cls_loss= 2.03836 (277 samples/sec)
+2024-03-13 05:46:03.942420 epoch: 5 step: 3000 cls_loss= 1.87788 (280 samples/sec)
+2024-03-13 05:49:06.653224------------------------------------------------------ Precision@1: 66.40%  Precision@1: 87.00%
+
+top1: [65.812, 66.33800000000001, 66.468, 65.386, 66.404]
+top5: [86.69800000000001, 87.038, 86.926, 86.374, 87.0]
+2024-03-13 05:49:06.852315 epoch: 6 step: 0 cls_loss= 1.31753 (80777 samples/sec)
+2024-03-13 05:50:04.466795 epoch: 6 step: 500 cls_loss= 2.09449 (277 samples/sec)
+2024-03-13 05:51:02.220155 epoch: 6 step: 1000 cls_loss= 1.85479 (277 samples/sec)
+2024-03-13 05:51:59.851025 epoch: 6 step: 1500 cls_loss= 2.57135 (277 samples/sec)
+2024-03-13 05:52:56.868563 epoch: 6 step: 2000 cls_loss= 2.03955 (280 samples/sec)
+2024-03-13 05:53:53.826897 epoch: 6 step: 2500 cls_loss= 1.79194 (280 samples/sec)
+2024-03-13 05:54:51.422648 epoch: 6 step: 3000 cls_loss= 1.74005 (277 samples/sec)
+2024-03-13 05:57:51.791042------------------------------------------------------ Precision@1: 65.29%  Precision@1: 86.41%
+
+top1: [65.812, 66.33800000000001, 66.468, 65.386, 66.404, 65.288]
+top5: [86.69800000000001, 87.038, 86.926, 86.374, 87.0, 86.414]
+2024-03-13 05:57:51.994666 epoch: 7 step: 0 cls_loss= 2.08992 (79021 samples/sec)
+2024-03-13 05:58:49.636297 epoch: 7 step: 500 cls_loss= 1.32375 (277 samples/sec)
+2024-03-13 05:59:47.232946 epoch: 7 step: 1000 cls_loss= 2.12279 (277 samples/sec)
+2024-03-13 06:00:44.191904 epoch: 7 step: 1500 cls_loss= 2.26858 (280 samples/sec)
+2024-03-13 06:01:42.402560 epoch: 7 step: 2000 cls_loss= 2.27098 (274 samples/sec)
+2024-03-13 06:02:39.761841 epoch: 7 step: 2500 cls_loss= 2.02504 (279 samples/sec)
+2024-03-13 06:03:37.687778 epoch: 7 step: 3000 cls_loss= 1.98570 (276 samples/sec)
+2024-03-13 06:06:39.889986------------------------------------------------------ Precision@1: 66.83%  Precision@1: 87.33%
+
+top1: [65.812, 66.33800000000001, 66.468, 65.386, 66.404, 65.288, 66.828]
+top5: [86.69800000000001, 87.038, 86.926, 86.374, 87.0, 86.414, 87.33]
+2024-03-13 06:06:40.085168 epoch: 8 step: 0 cls_loss= 2.28646 (82482 samples/sec)
+2024-03-13 06:07:36.740160 epoch: 8 step: 500 cls_loss= 1.84457 (282 samples/sec)
+2024-03-13 06:08:33.957363 epoch: 8 step: 1000 cls_loss= 2.06134 (279 samples/sec)
+2024-03-13 06:09:31.777825 epoch: 8 step: 1500 cls_loss= 1.46011 (276 samples/sec)
+2024-03-13 06:10:28.968409 epoch: 8 step: 2000 cls_loss= 2.02639 (279 samples/sec)
+2024-03-13 06:11:25.555186 epoch: 8 step: 2500 cls_loss= 2.05988 (282 samples/sec)
+2024-03-13 06:12:22.903242 epoch: 8 step: 3000 cls_loss= 2.14313 (279 samples/sec)
+2024-03-13 06:15:23.743268------------------------------------------------------ Precision@1: 65.71%  Precision@1: 86.54%
+
+top1: [65.812, 66.33800000000001, 66.468, 65.386, 66.404, 65.288, 66.828, 65.712]
+top5: [86.69800000000001, 87.038, 86.926, 86.374, 87.0, 86.414, 87.33, 86.542]
+2024-03-13 06:15:23.948664 epoch: 9 step: 0 cls_loss= 1.22239 (78342 samples/sec)
+2024-03-13 06:16:21.798343 epoch: 9 step: 500 cls_loss= 2.41856 (276 samples/sec)
+2024-03-13 06:17:19.515426 epoch: 9 step: 1000 cls_loss= 2.08490 (277 samples/sec)
+2024-03-13 06:18:16.066588 epoch: 9 step: 1500 cls_loss= 2.71556 (283 samples/sec)
+2024-03-13 06:19:12.652551 epoch: 9 step: 2000 cls_loss= 1.89242 (282 samples/sec)
+2024-03-13 06:20:09.312097 epoch: 9 step: 2500 cls_loss= 2.22914 (282 samples/sec)
+2024-03-13 06:21:05.336884 epoch: 9 step: 3000 cls_loss= 1.57440 (285 samples/sec)
+2024-03-13 06:24:01.583554------------------------------------------------------ Precision@1: 66.60%  Precision@1: 87.36%
+
+top1: [65.812, 66.33800000000001, 66.468, 65.386, 66.404, 65.288, 66.828, 65.712, 66.604]
+top5: [86.69800000000001, 87.038, 86.926, 86.374, 87.0, 86.414, 87.33, 86.542, 87.358]
+2024-03-13 06:24:01.788561 epoch: 10 step: 0 cls_loss= 1.93035 (78438 samples/sec)
+2024-03-13 06:24:59.037793 epoch: 10 step: 500 cls_loss= 1.48165 (279 samples/sec)
+2024-03-13 06:25:55.578706 epoch: 10 step: 1000 cls_loss= 1.76078 (283 samples/sec)
+2024-03-13 06:26:52.583979 epoch: 10 step: 1500 cls_loss= 2.31107 (280 samples/sec)
+2024-03-13 06:27:49.608948 epoch: 10 step: 2000 cls_loss= 1.94750 (280 samples/sec)
+2024-03-13 06:28:45.933568 epoch: 10 step: 2500 cls_loss= 1.86762 (284 samples/sec)
+2024-03-13 06:29:42.961657 epoch: 10 step: 3000 cls_loss= 2.60144 (280 samples/sec)
+2024-03-13 06:32:45.013793------------------------------------------------------ Precision@1: 66.91%  Precision@1: 87.40%
+
+top1: [65.812, 66.33800000000001, 66.468, 65.386, 66.404, 65.288, 66.828, 65.712, 66.604, 66.914]
+top5: [86.69800000000001, 87.038, 86.926, 86.374, 87.0, 86.414, 87.33, 86.542, 87.358, 87.4]
+]0;vscode@pytorch: /workspaces/pytorch-dev/SLFP_CNNs[01;32mvscode@pytorch[00m:[01;34m/workspaces/pytorch-dev/SLFP_CNNs[00m$ [K]0;vscode@pytorch: /workspaces/pytorch-dev/SLFP_CNNs[01;32mvscode@pytorch[00m:[01;34m/workspaces/pytorch-dev/SLFP_CNNs[00m$ [K]0;vscode@pytorch: /workspaces/pytorch-dev/SLFP_CNNs[01;32mvscode@pytorch[00m:[01;34m/workspaces/pytorch-dev/SLFP_CNNs[00m$ [K]0;vscode@pytorch: /workspaces/pytorch-dev/SLFP_CNNs[01;32mvscode@pytorch[00m:[01;34m/workspaces/pytorch-dev/SLFP_CNNs[00m$ [K]0;vscode@pytorch: /workspaces/pytorch-dev/SLFP_CNNs[01;32mvscode@pytorch[00m:[01;34m/workspaces/pytorch-dev/SLFP_CNNs[00m$ bash bash_train.sh [K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kscript[K[K[K[K[K[Kexit
+
+Script done on 2024-03-13 19:35:16+08:00 [COMMAND_EXIT_CODE="0"]
