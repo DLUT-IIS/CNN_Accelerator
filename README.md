@@ -1,5 +1,4 @@
-# ProjectName
-Project Description.  
+# Project Description
 
 Implement a convolutional neural network based on SLFP (Small Logarithmic Floating-Point) using python.  
 
@@ -10,6 +9,8 @@ Implement a convolutional neural network based on SLFP (Small Logarithmic Floati
 **Note:** Optimisers include:Adam, SGD, RMSPOP,SSGD, SGDNW ("FPGA-friendly Architecture of Processing Elements For Eficient and AccurateCNNS"), etc.;  
 
 **Note:** Datasets include: MNIST, Cifar100, lmgnet1K.  
+
+****
 
 Related articles on SLFP:
 
