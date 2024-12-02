@@ -102,11 +102,12 @@ filetree
 └── imgnet_train_eval.py
 
 ```
+
 ## models.net_weights
 Accuracy of Quantized NET using various nonlinear activation functions on ImageNet-1K   
+
 ## models.net_weights_relu
 \`\`\`python
-
     # "mobilenetv1":
     # pretrain_dir = 'mobnetv1_m1_base.pth'                                   # paper: 68.786%
     # pretrain_dir = '20241023_mobilenet_imgnet_1e6_bitch_size_68.068.pth'    # val-8bits:68.068%  
