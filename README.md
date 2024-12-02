@@ -3,13 +3,13 @@ Project Description.
 
 Implement a convolutional neural network based on SLFP (Small Logarithmic Floating-Point) using python.  
 
-*Note:* Supported network models: vgg, alexnet, resnet50, mobelinetv1, mobelinetv2, mobelinetv3, shufflenetv2, etc.;   
+**Note:** Supported network models: vgg, alexnet, resnet50, mobelinetv1, mobelinetv2, mobelinetv3, shufflenetv2, etc.;   
 
-*Note:* Supported activation functions include: relu, qelu, prelu, swish, mish, etc.;  
+**Note:** Supported activation functions include: relu, qelu, prelu, swish, mish, etc.;  
 
-*Note:* Optimisers include:Adam, SGD, RMSPOP,SSGD, SGDNW ("FPGA-friendly Architecture of Processing Elements For Eficient and AccurateCNNS"), etc.;  
+**Note:** Optimisers include:Adam, SGD, RMSPOP,SSGD, SGDNW ("FPGA-friendly Architecture of Processing Elements For Eficient and AccurateCNNS"), etc.;  
 
-*Note:* Datasets include: MNIST, Cifar100, lmgnet1K.  
+**Note:** Datasets include: MNIST, Cifar100, lmgnet1K.  
 
 Related articles on SLFP:
 
