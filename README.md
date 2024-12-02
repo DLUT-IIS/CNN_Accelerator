@@ -107,7 +107,7 @@ filetree
 Accuracy of Quantized NET using various nonlinear activation functions on ImageNet-1K   
 
 ## models.net_weights_relu
-\`\`\`python
+```python
     # "mobilenetv1":
     # pretrain_dir = 'mobnetv1_m1_base.pth'                                   # paper: 68.786%
     # pretrain_dir = '20241023_mobilenet_imgnet_1e6_bitch_size_68.068.pth'    # val-8bits:68.068%  
@@ -128,8 +128,7 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
     # pretrain_dir = 'resnet_8perclass_slfp34_76.pth'                         # 75.864%
     # pretrain_dir = '20241120_resnet_imgnet_1e5_channel_SGDNW_slfp.pth'      # 76.276%
     # pretrain_dir = '20241120_resnet_imgnet_1e5_channel_SGD_WD0_slfp.pth'    # 76.352% 
-\`\`\`
-
+```
 
 
 
