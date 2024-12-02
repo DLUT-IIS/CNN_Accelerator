@@ -117,16 +117,10 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
     # pretrain_dir = '20241119_mobilenetv1_imgnet_1e5_channel_SGDNW_slfp.pth' # 68.064% 
 
     #"mobilenetv2":
-    # pretrain_dir = 'mobilenetv2-c5e733a8.pth'                               # 72.85% 
-    # pretrain_dir = 'mobilenetv2_1.0-0c6065bc.pth'                           # 72.186%
-    # pretrain_dir = 'mobilenetv2_128x128-fd66a69d.pth'                       # 68.186%
-    # pretrain_dir = 'mobilenetv2_160x160-64dc7fa1.pth'                       # 71.39%
-    # pretrain_dir = 'mobilenetv2_192x192-e423d99e.pth'                       # 72.254% 
     # pretrain_dir = 'mobilenetv2_192x192-e423d99e.pth'                       # 72.254% 
     # pretrain_dir = '20241118_mobilenetv2_imgnet_1e5_layer_SGDNW_slfp.pth'   # 71.872% 
                                      
     # "resnet50":
-    # pretrain_dir = 'resnet-50.pth'                                          # 76.148% 
     # pretrain_dir = 'resnet_8perclass_slfp34_76.pth'                         # 75.864%
     # pretrain_dir = '20241120_resnet_imgnet_1e5_channel_SGDNW_slfp.pth'      # 76.276%
     # pretrain_dir = '20241120_resnet_imgnet_1e5_channel_SGD_WD0_slfp.pth'    # 76.352% 
@@ -136,7 +130,6 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
 
 ```python
     # "mobilenetv1":  
-    # pretrain_dir = 'mobnetv1_m1_base.pth'                                       # 68.786%
     # pretrain_dir = '20241101_mobilenet_imagenet_swish_8bits_rmsprop_1e4_32.pth' # 66.644%
     # pretrain_dir = '20241101_mobilenet_imagenet_swish_8bits_rmsprop_5e6_32.pth' # 67.294%
     # pretrain_dir = '20241102_mobilenet_imagenet_swish_8bits_rmsprop_1e6_64.pth' # 67.396%
@@ -144,8 +137,6 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
 
   
     # "mobilenetv2":
-    # pretrain_dir = 'mobilenetv2-c5e733a8.pth'                               # 72.85% 
-    # pretrain_dir = 'mobilenetv2_192x192-e423d99e.pth'                       # 72.254% 
     # pretrain_dir = '20241122_mobilenetv2_imgnet_swish_fp32.pth'             # 71.862%
     # pretrain_dir = '20241123_mobilenetv2_imgnet_swish_fp32.pth'             # 71.976%
     # pretrain_dir = '20241124_mobilenetv2_imgnet_swish_fp32.pth'             # 71.952%
@@ -154,8 +145,6 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
     # pretrain_dir = '20241126_mobilenetv2_imgnet_swish_slfp_sgd'             # 71.404%
 
     # "resnet50":
-    # pretrain_dir = resnet-50.pth'
-    # pretrain_dir = resnet50-11ad3fa6.pth'                                   # 80.344%
     # pretrain_dir = 20241109_resnet_imgnet_swish_32bits_1e5.pth'             # 79.64%
     # pretrain_dir = 20241112_resnet_imgnet_swish_8bits_1e5.pth'              # 78.482, 78.8%
     # pretrain_dir = 20241121_resnet_imgnet_swish_SGDNW_8bits_1e5.pth'        # 78.608%
@@ -171,8 +160,6 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
     # pretrain_dir = '20241025_mobilenet_imgnet_gelu_32bits.pth'             # 4.928%
   
     # "mobilenetv2":
-    # pretrain_dir = 'mobilenetv2-c5e733a8.pth'                              # 72.85% 
-    # pretrain_dir = 'mobilenetv2_192x192-e423d99e.pth'                      # 72.254% 
     # pretrain_dir = '20241122_mobilenetv2_imgnet_gelu_fp32.pth'             # 71.782% 
     # pretrain_dir = '20241126_mobilenetv2_imgnet_gelu_fp32.pth'             # 72.122% 
     # pretrain_dir = '20241126_mobilenetv2_imgnet_gelu_slfp_sgd.pth'         # 71.276%
@@ -193,16 +180,12 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
     # pretrain_dir = 'mobnetv1_m1_base.pth'                             	 # 68.786%
 
     # "mobilenetv2":
-    # pretrain_dir = 'mobilenetv2-c5e733a8.pth'                              # 72.85% 
-    # pretrain_dir = 'mobilenetv2_192x192-e423d99e.pth'                      # 72.254%  
     # pretrain_dir = '20241123_mobilenetv2_imgnet_mish_fp32.pth'             # 71.628%
     # pretrain_dir = '20241126_mobilenetv2_imgnet_mish_fp32.pth'             # 72.298%
     # pretrain_dir = '20241126_mobilenetv2_imgnet_mish_slfp_sgd.pth'         # 71.466%
     # pretrain_dir = '20241126_mobilenetv2_imgnet_mish_slfp_sgdnw.pth'       # 71.914%
 
     # resnet50
-    # pretrain_dir = 'resnet-50.pth'
-    # pretrain_dir = 'resnet50-11ad3fa6.pth'                                 # 80.344%
     # pretrain_dir = '20241108_resnet_imgnet_mish_32bits_1e5.pth'            # 79.78%
     # pretrain_dir = '20241111_resnet_imgnet_mish_8bits_1e5.pth'             # 77.722%
     # pretrain_dir = '20241118_resnet_imgnet_mish_SGDNW_8bits_1e5.pth'       # 78.154%
@@ -212,21 +195,17 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
 
 ```python
     # "mobilenetv1":
-    # pretrain_dir = 'mobnetv1_m1_base.pth'                                  # 68.786%
     # pretrain_dir = '20241025_mobilenet_imgnet_gelu_32bits.pth'             # 64.928%
     # pretrain_dir = '20241030_mobilenet_imgnet_prelu_32bits_1e6.pth'        # 68.302%
 
 
     # "mobilenetv2":
-    # pretrain_dir = 'mobilenetv2-c5e733a8.pth'                              # 72.85% 
-    # pretrain_dir = 'mobilenetv2_192x192-e423d99e.pth'                      # 72.254% 
     # pretrain_dir = '20241123_mobilenetv2_imgnet_prelu_fp32.pth'            # 71.968%
     # pretrain_dir = '20241125_mobilenetv2_imgnet_prelu_fp32.pth'            # 72.334%
     # pretrain_dir = '20241125_mobilenetv2_imgnet_prelu_slfp_sgdnw.pth'      # 71.502%
     # pretrain_dir = '20241126_mobilenetv2_imgnet_prelu_slfp_sgd.pth'        # 71.366%
 
     # "resnet50":
-    # pretrain_dir = 'resnet50-11ad3fa6.pth'                                 # 80.344%
     # pretrain_dir = '220241109_resnet_imgnet_prelu_32bits_1e5.pth'          # 79.22% 
     # pretrain_dir = '20241119_resnet_imgnet_prelu_8bits_1e5.pth'            # 76.51% 
     # pretrain_dir = '20241120_resnet_imgnet_prelu_SGDNW_8bits_1e5.pth'      # 77.128% 
