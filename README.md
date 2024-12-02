@@ -102,9 +102,30 @@ filetree
 └── imgnet_train_eval.py
 
 ```
-## models.net_weights_Imgnet1k
+## models.net_weights
+Accuracy of Quantized NET using various nonlinear activation functions on ImageNet-1K   
+## models.net_weights_relu
 \`\`\`python
-print(“Hello, World!”)
+    # "mobilenetv1":
+    # pretrain_dir = 'mobnetv1_m1_base.pth'                                   # paper: 68.786%
+    # pretrain_dir = '20241023_mobilenet_imgnet_1e6_bitch_size_68.068.pth'    # val-8bits:68.068%  
+    # pretrain_dir = '20241023_mobilenet_imgnet_1e6_bitch_size_68.068.pth'    # val-8bits:68.068%
+    # pretrain_dir = '20241119_mobilenetv1_imgnet_1e5_channel_SGDNW_slfp.pth' # val-8bits:68.064% 
+
+    #"mobilenetv2":
+    # pretrain_dir = 'mobilenetv2-c5e733a8.pth'                               # 72.85% 
+    # pretrain_dir = 'mobilenetv2_1.0-0c6065bc.pth'                           # 72.186%
+    # pretrain_dir = 'mobilenetv2_128x128-fd66a69d.pth'                       # 68.186%
+    # pretrain_dir = 'mobilenetv2_160x160-64dc7fa1.pth'                       # 71.39%
+    # pretrain_dir = 'mobilenetv2_192x192-e423d99e.pth'                       # 72.254% 
+    # pretrain_dir = 'mobilenetv2_192x192-e423d99e.pth'                       # 72.254% 
+    # pretrain_dir = '20241118_mobilenetv2_imgnet_1e5_layer_SGDNW_slfp.pth'   # 71.872% 
+                                     
+    # "resnet":
+    # pretrain_dir = 'resnet-50.pth'                                          # 76.148% 
+    # pretrain_dir = 'resnet_8perclass_slfp34_76.pth'                         # 75.864%
+    # pretrain_dir = '20241120_resnet_imgnet_1e5_channel_SGDNW_slfp.pth'      # 76.276%
+    # pretrain_dir = '20241120_resnet_imgnet_1e5_channel_SGD_WD0_slfp.pth'    # 76.352% 
 \`\`\`
 
 
