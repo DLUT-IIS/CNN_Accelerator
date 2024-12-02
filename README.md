@@ -102,6 +102,10 @@ filetree
 └── imgnet_train_eval.py
 
 ```
+## models.net_weights_Imgnet1k
+\`\`\`python
+print(“Hello, World!”)
+\`\`\`
 
 
 
