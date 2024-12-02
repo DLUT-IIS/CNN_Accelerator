@@ -17,18 +17,18 @@ Related articles on SLFP:
 
 "FPGA-Friendly Architecture of Processing Elements For Efficient and Accurate CNNs"  
 
-### User Guide
+# User Guide
 
-Please replace ’https://github.com/zhangshize1103/Universal_CNN_Accelerator' with ‘your_github_name/your_repository’ in all links. ’
+Please replace ’https://github.com/DLUT-IIS/CNN_Accelerator' with ‘your_github_name/your_repository’ in all links. ’
 
-###### Pre-development Configuration Requirement
+## Pre-development Configuration Requirement
 
 Dependencies:
 - Python 3.6+
 - PyTorch 1.0+
 - torchvision 0.2.2+
 
-###### **Installation steps**
+## **Installation steps**
 
 1. Get a free API Key at [https://example.com](https://example.com)
 2. Clone 
@@ -37,7 +37,7 @@ Dependencies:
 git clone https://github.com/DLUT-IIS/https://github.com/DLUT-IIS/CNN_Accelerator
 ```
 
-### Description of the document catalogue
+## Description of the document catalogue
 eg:
 
 ```
