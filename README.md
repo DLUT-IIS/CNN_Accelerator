@@ -10,13 +10,14 @@ Implement a convolutional neural network based on SLFP (Small Logarithmic Floati
 
 **Note:** Datasets include: MNIST, Cifar100, lmgnet1K.  
 
+
+*Related articles on SLFP:*
+
+*"Small Logarithmic Floating-Point Multiplier Based on FPGA and Its Application on MobileNet"*  
+
+*"FPGA-Friendly Architecture of Processing Elements For Efficient and Accurate CNNs"*  
+
 ****
-
-Related articles on SLFP:
-
-"Small Logarithmic Floating-Point Multiplier Based on FPGA and Its Application on MobileNet"  
-
-"FPGA-Friendly Architecture of Processing Elements For Efficient and Accurate CNNs"  
 
 # User Guide
 
