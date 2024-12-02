@@ -116,7 +116,7 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
     # pretrain_dir = '20241023_mobilenet_imgnet_1e6_bitch_size_68.068.pth'    # 68.068%
     # pretrain_dir = '20241119_mobilenetv1_imgnet_1e5_channel_SGDNW_slfp.pth' # 68.064% 
 
-    #"mobilenetv2":
+    # "mobilenetv2":
     # pretrain_dir = 'mobilenetv2_192x192-e423d99e.pth'                       # 72.254% 
     # pretrain_dir = '20241118_mobilenetv2_imgnet_1e5_layer_SGDNW_slfp.pth'   # 71.872% 
                                      
@@ -176,8 +176,8 @@ Accuracy of Quantized NET using various nonlinear activation functions on ImageN
 ### models.net_weights_mish
 
 ```python
-    # "mobilenetv1"
-    # pretrain_dir = 'mobnetv1_m1_base.pth'                             	 # 68.786%
+    # "mobilenetv1"   
+    # pretrain_dir = 'mobnetv1_m1_base.pth'                             	 # 68.786%   
 
     # "mobilenetv2":
     # pretrain_dir = '20241123_mobilenetv2_imgnet_mish_fp32.pth'             # 71.628%
