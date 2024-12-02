@@ -34,7 +34,7 @@ Dependencies:
 2. Clone 
 
 ```sh
-git clone https://github.com/zhangshize1103/https://github.com/zhangshize1103/Universal_CNN_Accelerator
+git clone https://github.com/DLUT-IIS/https://github.com/DLUT-IIS/CNN_Accelerator
 ```
 
 ### Description of the document catalogue
