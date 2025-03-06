@@ -1,4 +1,4 @@
-# Project Description **
+# Project Description
 
 Implement a convolutional neural network based on SLFP (Small Logarithmic Floating-Point) using python.  
 
