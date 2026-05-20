@@ -44,6 +44,7 @@ git clone https://github.com/DLUT-IIS/CNN_Accelerator.git
 cd CNN_Accelerator
 ```
 ### Project Structure
+```bash
 .
 ├── nets_cifar/             # Model definitions for CIFAR (LeNet, MobileNetV1, VGG16)
 ├── nets_imgnet/            # Model definitions for ImageNet (ResNet50, MobileNetV1/V2, etc.)
@@ -55,7 +56,7 @@ cd CNN_Accelerator
 ├── max_act_wgt/            # Pre-calculated Activation/Weight statistics
 ├── cifar100_train_eval.py  # Training entry for CIFAR-100
 └── imgnet_train_eval.py    # Training entry for ImageNet-1K
-
+```
 ## 📊 Experimental Results (ImageNet-1K)
 
 The following table summarizes the Top-1 accuracy of quantized networks using different activation functions and SLFP arithmetic.
