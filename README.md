@@ -38,7 +38,6 @@ The implementation is inspired by and supports research on:
 - torchvision 0.2.2+
 
 ### Installation
-```bash
 # Clone the repository
 git clone https://github.com/DLUT-IIS/CNN_Accelerator.git
 cd CNN_Accelerator
