@@ -28,11 +28,6 @@ The implementation is inspired by and supports research on:
 1.  *"Small Logarithmic Floating-Point Multiplier Based on FPGA and Its Application on MobileNet"*
 2.  *"FPGA-Friendly Architecture of Processing Elements For Efficient and Accurate CNNs"*
 
-### Weight Update Scheme
-The figure below compares the weight update logic between Fixed-Point and Floating-Point (SLFP) schemes.
-<img width="687" height="278" alt="image" src="https://github.com/user-attachments/assets/4520f210-b24c-4e8e-8a8f-abfd5ea38ec7" />
-*(Note: (1) FP32 update; (2) Rounding; (3) Update failure; (4) Update success.)*
-
 ---
 
 ## 🚀 Quick Start
