@@ -1,8 +1,8 @@
-# SLFP-CNN: Small Logarithmic Floating-Point CNN Accelerator
+<img width="687" height="278" alt="image" src="https://github.com/user-attachments/assets/9a1541a5-4db0-4b8f-abc0-4ef8845bbabe" /># SLFP-CNN: Small Logarithmic Floating-Point CNN Accelerator
 
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 1.0+](https://img.shields.io/badge/pytorch-1.0+-ee4c2c.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: DUT](https://img.shields.io/badge/License-DLUT-yellow.svg)](https://opensource.org/licenses/DLUT)
 
 An implementation of Convolutional Neural Networks based on **SLFP (Small Logarithmic Floating-Point)** arithmetic. This project focuses on simulating low-bit-width floating-point operations to achieve hardware-friendly CNN acceleration.
 
@@ -30,7 +30,7 @@ The implementation is inspired by and supports research on:
 
 ### Weight Update Scheme
 The figure below compares the weight update logic between Fixed-Point and Floating-Point (SLFP) schemes.
-![Weight Update Scheme](https://raw.githubusercontent.com/DLUT-IIS/CNN_Accelerator/main/your_image_path.png) 
+<img width="687" height="278" alt="image" src="https://github.com/user-attachments/assets/4520f210-b24c-4e8e-8a8f-abfd5ea38ec7" />
 *(Note: (1) FP32 update; (2) Rounding; (3) Update failure; (4) Update success.)*
 
 ---
@@ -58,3 +58,20 @@ cd CNN_Accelerator
 ├── max_act_wgt/            # Pre-calculated Activation/Weight statistics
 ├── cifar100_train_eval.py  # Training entry for CIFAR-100
 └── imgnet_train_eval.py    # Training entry for ImageNet-1K
+
+## 📊 Experimental Results (ImageNet-1K)
+
+The following table summarizes the Top-1 accuracy of quantized networks using different activation functions and SLFP arithmetic.
+
+| Model | Activation | Quantization | Optimizer | Accuracy |
+| :--- | :--- | :--- | :--- | :--- |
+| **MobileNetV1** | ReLU | SLFP (8-bit) | SGDNW | 68.06% |
+| **MobileNetV2** | ReLU | SLFP (8-bit) | SGDNW | 71.87% |
+| **ResNet50** | ReLU | SLFP (8-bit) | SGD | 76.35% |
+| **ResNet50** | Swish | SLFP (8-bit) | SGDNW | 78.71% |
+| **ResNet50** | GELU | SLFP (8-bit) | SGDNW | 73.43% |
+| **MobileNetV2** | Mish | SLFP (8-bit) | SGDNW | 71.91% |
+| **MobileNetV2** | PReLU | SLFP (8-bit) | SGDNW | 71.50% |
+
+> **Note:** For detailed training logs and pre-trained `.pth` file references, please check the code comments in `models.net_weights`.
+
