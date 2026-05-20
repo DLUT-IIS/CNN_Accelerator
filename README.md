@@ -1,4 +1,4 @@
-<img width="687" height="278" alt="image" src="https://github.com/user-attachments/assets/9a1541a5-4db0-4b8f-abc0-4ef8845bbabe" /># SLFP-CNN: Small Logarithmic Floating-Point CNN Accelerator
+# SLFP-CNN: Small Logarithmic Floating-Point CNN Accelerator
 
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch 1.0+](https://img.shields.io/badge/pytorch-1.0+-ee4c2c.svg)](https://pytorch.org/)
